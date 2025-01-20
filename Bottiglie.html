@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bottiglie.css">
+    <title>Bottiglie</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introduzione">
+            <div class="title">
+                <h1>Heineken</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Heineken", sviluppato durante il terzo anno al CSIA nelle lezioni di animazione 2D,
+                    consisteva nella realizzazione di una animazione interattiva per presentare vari prodotti di
+                    birra. La pagina utilizza un effetto parallasse a ciclo continuo, in cui ogni animazione si attiva
+                    con il clic dell'utente, offrendo un'esperienza dinamica e coinvolgente.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Creare una animazione animata in cui i vari prodotti venissero presentati in successione con un
+                        meccanismo ciclico e interattivo, sfruttando il parallax per aggiungere profondità e movimento.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La principale sfida è stata creare un effetto parallax continuo che mantiene un ritmo fluido e
+                        armonioso, garantendo al contemporaneo che le animazioni si attivassero in modo intuitivo e
+                        reattivo al clic. Questo ha richiesto un attento bilanciamento tra design grafico e funzionalità
+                        interattive.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho sviluppato l'animazone in Adobe XD, creando una sequenza animata in cui ogni prodotto è
+                        stato messo in evidenza con transizioni parallax fluide. Grazie all'integrazione di un sistema
+                        di clic per attivare le animazioni, l'utente può esplorare i vari prodotti in loop continuo.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+            <div>
+                <article>
+                    <img src="Animazioni 2D/Terzo anno/Bottiglie/img/Bottiglie.png" id="Bottiglie">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button class="downloadButton"><a href="" download="">
+                                Scarica PDF</a></button>
+                        <button><a
+                                href="https://xd.adobe.com/view/c23910b3-3e65-4c2b-8ec9-745d558d9a4c-976a/screen/c9c905d6-0c39-44cc-a7b3-c0d679c8fa0d?fullscreen">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+                <div class="galleria">
+                    <img id="DarkGreen" src="Animazioni 2D/Terzo anno/Bottiglie/img/Bottiglie_DarkGreen_q.jpg"
+                        alt="DarkGreen">
+                    <img id="White" src="Animazioni 2D/Terzo anno/Bottiglie/img/Bottiglie_white_q.png" alt="White">
+                    <img id="LightGreen" src="Animazioni 2D/Terzo anno/Bottiglie/img/Bottiglie_LightGreen_q.png"
+                        alt="LightGreen">
+                    <img>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

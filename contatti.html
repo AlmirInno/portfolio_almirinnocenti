@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="contatti.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="info">
+            <div>
+                <h1>Informazioni di contatto</h1>
+                <h3>Telefono</h3>
+                <a href="#">331 444 73 70</a>
+
+                <h3>Email</h3>
+                <a href="https://mail.google.com/mail/u/0/">almirinnocenti96@gmail.com</a>
+            </div>
+        </section>
+
+        <section class="form">
+            <form id="form">
+                <h1>Formulario di contatto</h1>
+                <div class="field">
+                    <label for="to_email">Indirizzo Email del mittente</label>
+                    <input type="email" name="from_email" id="from_email" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Messaggio</label>
+                    <textarea type="text" name="message" id="box" required></textarea>
+                </div>
+
+                <div class="bottoni">
+                    <input type="submit" id="button" value="Invia Email">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <!-- Libreria EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ik19gHtHKsrLrDk33"); // Sostituisci con il tuo User ID corretto
+
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita il comportamento predefinito del submit
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_almir96';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Invia Email';
+                        alert('Messaggio inviato!');
+                    }, (err) => {
+                        btn.value = 'Invia Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
+</body>
+
+</html>

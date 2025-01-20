@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Jack.css">
+    <title>Jack</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Jack</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Realizzato durante le lezioni di animazione 3D al quarto anno al CSIA, il progetto consisteva nella
+                    creazione di una scatola magica animata. La scatola fa emergere un diavolo al termine della
+                    rotazione della manovella, che viene poi fulminato in modo spettacolare.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Applicare principi di modellazione e animazione 3D per creare una scena dinamica, con transizioni
+                        fluide ed effetti visivi credibili.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Coordinare animazioni complesse, come il movimento della manovella, l'uscita del diavolo, e
+                        l'effetto del fulmine, assicurando una transizione armoniosa tra Cinema 4D e After Effects.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho modellato e animato la scatola e il diavolo utilizzando Cinema 4D, curando ogni dettaglio nei
+                        movimenti meccanici e nei gesti del personaggio. Successivamente, ho esportato i livelli e li ho
+                        integrati in After Effects, dove ho aggiunto gli effetti visivi, come il fulmine, e
+                        perfezionato l'intera scena per un risultato finale coinvolgente e coerente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="Jack" controls>
+                    <source src="Animazioni 3D/Jack/JackMaster.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

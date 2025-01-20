@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Worm.css">
+    <title>Worm</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Worm</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Realizzato durante le lezioni di animazione 3D al quarto anno al CSIA, questo progetto prevedeva la
+                    creazione e animazione di un verme in un'ambientazione minima. Il verme striscia da destra verso
+                    sinistra, con un effetto realistico di profondità dato da una fotocamera fissa.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sperimentare tecniche di modellazione e animazione per creare un movimento naturale e integrare
+                        effetti di messa a fuoco per migliorare la qualità visiva.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Assicurare che il movimento del verme fosse fluido e credibile, integrando l'animazione con un
+                        effetto di profondità utilizzando la camera in After Effects.</p>
+                </article>
+
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho creato i livelli di sfondo e il modello del verme in Cinema 4D. Successivamente, ho animato il
+                        movimento del verme in After Effects, integrando anche le luci dell'ambiente. Per migliorare il realismo, ho aggiunto
+                        una fotocamera fissa per simulare la profondità di campo, ottenendo un effetto visivo curato e
+                        coinvolgente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+            <div class="galleria">
+                <video id="Worm" controls>
+                    <source src="Animazioni 3D/Worm_scene/MasterWorm.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

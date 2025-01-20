@@ -1,0 +1,354 @@
+* {
+    font-family: "Fredoka", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+    padding: 0px;
+}
+
+header {
+    width: 1920px;
+    display: block;
+    position: absolute;
+}
+
+
+/* Menu principale */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Allinea verticalmente il contenuto */
+    line-height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Mantiene il menu in cima */
+    margin-top: -60px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Menu a tendina */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    z-index: 1;
+    padding: 0 px;
+    top: 100%;
+    /* Fa apparire il menu sotto la voce principale */
+}
+
+.dropdown-content li {
+    text-align: left;
+    width: 600px;
+    margin: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+/* Mostra il menu a tendina quando il mouse passa sopra */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effetti hover per le voci principali */
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: green;
+
+}
+
+
+.LogoNav {
+    margin-right: 900px;
+    font-weight: bolder;
+    color: green;
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 85px;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.nome {
+    color: green;
+    font-weight: bolder;
+}
+
+.professione {
+    background-color: rgba(172, 255, 47, 0.339);
+    width: fit-content;
+    height: 30px;
+    line-height: 30px;
+    color: greenyellow;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.descrizione {
+    font-size: 1.2rem;
+    line-height: 27px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+figure {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.introduzione {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.intestazione {
+    width: 50%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxTesti {
+    width: 90%;
+    height: 70%;
+    margin-left: 50px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    background-color: #33333354;
+    height: 100%;
+    width: 40%;
+}
+
+.image img {
+    height: 880px;
+}
+
+.comincia {
+    width: 75%;
+    height: 60px;
+    background-color: #333333;
+    color: greenyellow;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.518);
+    font-size: 1.4rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.comincia:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+.scopri {
+    width: 180px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+    background-color: #333333;
+    color: greenyellow;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.scopri:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+
+.miniature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 20%;
+    background-color: #333333;
+    height: 900px;
+    z-index: 0;
+}
+
+/* Contenitore del carosello */
+.carousel {
+    height: 780px;
+    /* Mostra 3 articoli da 180px ciascuno */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenuto interno del carosello */
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    /* Allineamento verticale */
+    transition: transform 0.5s ease-in-out;
+    /* Animazione fluida */
+}
+
+/* Card individuali */
+
+.miniature article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    max-height: 200px;
+    max-width: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.518);
+    cursor: pointer;
+    margin-bottom: 80px;
+    transition: opacity 0.5s;
+    filter: grayscale(100%);
+}
+
+
+.miniature article a {
+    position: relative;
+    margin: 0px;
+    background-color: #252525;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    bottom: 30px;
+    text-align: center;
+    color: greenyellow;
+    text-decoration: none;
+
+}
+
+.miniature article a:hover {
+    color: greenyellow;
+    background-color: green;
+}
+
+.miniature article img {
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.miniature article:hover{
+    filter: grayscale(0%);
+}
+
+.miniature .material-symbols-outlined {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0px;
+    z-index: 2;  
+}
+
+#scrollDown {
+    rotate: 180deg;
+}
+
+
+p {
+    line-height: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    background-color: #333333;
+    position: relative;
+    z-index: 1;
+    top: 100%;
+}
+
+footer div {
+    width: 1200px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.card4 a,
+.card5 a,
+.card7 a{
+    position: absolute;
+    top: 0px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HappyDog.css">
+    <title>Happy Dog</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Happy Dog</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto Happy Dog è stato realizzato durante il terzo anno al CSIA nelle lezioni di animazione 2D.
+                    L'obiettivo era creare un'animazione utilizzando After Effects e tecniche di codice come "type =
+                    cyle" e
+                    l'uso della camera. Inoltre, i cani dovevano essere progettati in "Illustrator" e poi animati
+                    mentre correvano su un prato, per ottenere un'animazione fluida e dinamica.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L'obiettivo del progetto era utilizzare After Effects per creare un'animazione che coinvolgesse
+                        il ciclo di movimento dei cani su un prato, sfruttando il codice per il movimento ciclico e
+                        l'uso della fotocamera per ottenere effetti dinamici.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata integrare l'uso di type=cyle per il movimento ripetitivo dei cani,
+                        creando animazioni fluide. Inoltre, l'uso della fotocamera per aggiungere profondità e dinamismo
+                        al movimento è stato un aspetto complesso che ho dovuto padroneggiare.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato After Effects per animare il ciclo di corsa dei cani, incorporando il codice
+                        type=cyle per ripetere il movimento in modo fluido. Ho integrato anche l'uso della telecamera
+                        per creare un effetto di movimento orizzontale e profondità di campo, aggiungendo dinamismo
+                        all'animazione del prato,
+                        risultando in un'animazione visivamente coinvolgente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="HappyDog" controls>
+                    <source src="Animazioni 2D/Terzo anno/Happy_dog_almirinnocenti/happy_dog.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

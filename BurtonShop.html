@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BurtonShop.css">
+    <title>BurtonShop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>BurtonShop</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    Durante il primo anno al CSIA, ho svolto un esercizio di programmazione web che prevedeva la
+                    creazione di una pagina dedicata ad articoli a scelta, mostrando alcune novità d’acquisto. Il focus
+                    principale era utilizzare le proprietà CSS position: absolute e relative per inserire un’etichetta
+                    "Novità" in alto a sinistra su ciascuna card dei prodotti. Per il progetto, ho scelto di dedicare la
+                    pagina agli articoli di abbigliamento sportivo del marchio Burton.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>
+                        L’obiettivo era creare una pagina che evidenziasse i nuovi articoli Burton, con un design
+                        statico e chiaro. Doveva includere un’etichetta "Novità" posizionata correttamente su ogni card,
+                        sfruttando le proprietà CSS di posizionamento.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata imparare a utilizzare position: absolute e relative per posizionare
+                        in modo accurato l’etichetta "Novità" rispetto al contenitore della card, garantendo un aspetto
+                        visivamente ordinato.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato HTML per strutturare le card dei prodotti e CSS per stilizzarle. L’etichetta
+                        "Novità" è stata posizionata con absolute all’interno della card configurata con relative.
+                        Sebbene il layout non fosse responsivo, il progetto ha raggiunto lo scopo di evidenziare le
+                        novità con un design chiaro e coerente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Secondo anno/Burton/BurtonShop/Img/Giacca2.jpg" alt="Monogram"
+                        id="Monogram">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://burtonshopexample.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+                    <textarea class="code-editor-html" readonly>
+                        <!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burton</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e41c33083c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="conteiner">
+        <h1>Burton</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur praesentium aperiam impedit dolor
+            illum illo laboriosam reprehenderit placeat aliquam, et nesciunt consequatur neque sunt ad cupiditate! Sint
+            quisquam amet mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat ipsa
+            provident minima? Earum eius maxime, unde excepturi itaque illum porro error illo, quam vero quo, iusto
+            pariatur dolorum molestias!</p>
+    </header>
+
+    <main class="conteiner">
+        <article>
+            <section>
+                <div class="novità">Novità</div>
+                <figure><img src="Img/felpa.jpg" alt="Felpa">
+                    <i class="far fa-heart"></i>
+                </figure>
+            </section>
+            <section>
+                <h3>Felpa</h3>
+                <section> 99.- <span>CHF </span></section>
+            </section>
+            <section><a href="index.html.html">Aquista ora</a>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div class="novità">Novità</div>
+                <figure> <img src="Img/Giacca.jpg" alt="Giacca">
+                    <i class="far fa-heart"></i>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Giacca</h3>
+                99.- <span>CHF</span>
+            </section>
+
+            <section>
+                <a href="index.html.html">Aquista ora</a>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <div class="novità">Novità</div>
+                <figure><img src="Img/maglietta.jpg" alt="Maglietta">
+                    <i class="far fa-heart"></i>
+                </figure>
+            </section>
+            <section>
+                <h3>Maglietta</h3>
+                99.- <span>CHF</span>
+            </section>
+            <section><a href="index.html.html">Aquista ora</a>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
+                        </textarea>
+
+                    <textarea class="code-editor-css" readonly>
+                        body {
+                            background-color: royalblue;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-size: 16px;
+                            background-color: antiquewhite;
+                            color: black;
+                        
+                        }
+                        
+                        .conteiner {
+                            margin: 0 auto;
+                            width: 1080px;
+                            ;
+                        }
+                        
+                        
+                        h1 {
+                            font-size: 40px;
+                        }
+                        
+                        main {
+                            display: flex;
+                            color: white;
+                            border-radius: 10px;
+                        
+                        }
+                        
+                        main figure {
+                            margin: 0px;
+                        }
+                        
+                        article {
+                            position: relative;
+                            justify-content: space-around;
+                            width: 300px;
+                            padding: 20px;
+                            margin: 20px 10px;
+                            border-radius: 10px;
+                            background-color: rgb(204, 160, 103);
+                            box-shadow: rgb(114, 114, 114) 10px 10px 30px;
+                        }
+                        
+                        a:link,
+                        a:visited {
+                            background-color: rgb(64, 148, 9);
+                            text-decoration: none;
+                            color: white;
+                            display: block;
+                            border-radius: 10px;
+                            text-align: center;
+                            font-size: 20px;
+                            transition: background-color 0.2s ease-in-out;
+                            margin-top: 20px;
+                            height: 50px;
+                            line-height: 50px;
+                        
+                        }
+                        
+                        a:hover,
+                        a:active {
+                            background-color: rgb(19, 216, 35);
+                        }
+                        
+                        .novità {
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+                            color: rgb(255, 255, 255);
+                            background-color: green;
+                            padding: 5px;
+                            border-radius: 3px;
+                        }
+                        
+                        i {
+                            position: absolute;
+                            bottom: 180px;
+                            right: 30px;
+                            color: red;
+                        
+                        }
+                        
+                        main figure img {
+                            border-radius: 10px;
+                        }
+                        
+                        article section span {
+                            font-size: 16px;
+                            color: red;
+                        }
+                            </textarea>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

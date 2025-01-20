@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HeartBeat.css">
+    <title>HeartBeat</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>HeartBeat</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Heartbeat" , realizzato durante il primo anno al CSIA nelle lezioni di Animazione 2D,
+                    consisteva nel sovrapporre un'animazione grafica a un video di una macchina.
+                    L'animazione simulava un elettrocardiogramma sincronizzato al suono di un battito cardiaco, con
+                    l'aggiunta del logo Saleen per sottolineare l'identità visiva del progetto.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sperimentare la sincronizzazione tra grafica animata e elementi audio, integrandoli con un video
+                        preregistrato per creare un effetto dinamico e coinvolgente.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Garantire che il movimento dell'elettrocardiogramma fosse perfettamente sincronizzato con il
+                        ritmo del battito cardiaco, creando un'animazione che risultasse fluida e visivamente armoniosa
+                        con il logo e il video di sfondo.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato After Effects per creare l'animazione dell'elettrocardiogramma, impostando i
+                        keyframe in base al ritmo audio del battito cardiaco. Successivamente, ho integrato l'effetto
+                        lens flare, elementi grafici e il logo
+                        Saleen per aggiungere coerenza visiva e rafforzare il messaggio del progetto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="HeartBeat" controls>
+                    <source src="Animazioni 2D/Primo anno/HeartBeat/Heartbeat Master.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

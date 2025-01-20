@@ -1,0 +1,318 @@
+* {
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-image: url();
+}
+
+header {
+    width: 1920px;
+    display: block;
+    position: absolute;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: greenyellow;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Menu principale */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 60px;
+    position: fixed;
+    z-index: 1000;
+    margin-top: -60px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Menu a tendina */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    z-index: 1;
+    padding: 0 px;
+    top: 100%;
+    /* Fa apparire il menu sotto la voce principale */
+}
+
+.dropdown-content li {
+    text-align: left;
+    width: 600px;
+    margin: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+/* Mostra il menu a tendina quando il mouse passa sopra */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effetti hover per le voci principali */
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+.LogoNav {
+    margin-right: 900px;
+    font-weight: bolder;
+    color: green;
+    font-size: 1.4rem;
+}
+
+.scopri {
+    width: 180px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+    background-color: #333333;
+    color: greenyellow;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.scopri:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+main {
+    width: 100%;
+    background-color: #333333;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    color: white;
+}
+
+main section {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.descrizione {
+    width: 65%;
+}
+
+main .key {
+    width: 1200px;
+    display: block;
+    margin-top: 90px;
+}
+
+h2 {
+    color: greenyellow;
+    text-align: center;
+
+}
+
+.key div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key article {
+    width: 400px;
+    height: 300px;
+    margin: 0px 10px;
+    background-color: #252525;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    text-align:left;
+    padding: 20px;
+}
+
+
+h3 {
+    color: greenyellow;
+    text-align: center;
+}
+
+.progetto {
+    width: 1200px;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 80px;
+
+}
+
+.galleria {
+    gap: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galleria img {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    /* Garantisce che l'immagine riempia il quadrato senza deformarsi */
+    background-color:white;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+}
+
+
+.progetto div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.progetto h3 {
+    text-align: left;
+}
+
+.progetto article {
+    width: 50%;
+    background-color: #252525;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    margin-right: 5px;
+}
+
+
+.progetto article p {
+    padding: 0px 20px;
+}
+
+.progetto article h3 {
+    text-align: center;
+}
+
+.progetto #Sneakers {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+#Scarpa {
+    width: 555px;
+    height: 570px;
+}
+
+.bottoni {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottoni button {
+    height: 40px;
+    width: 200px;
+    background-color: green;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+.bottoni button:hover {
+    background-color: greenyellow;
+}
+
+.bottoni button a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottoni button:hover a {
+    color: green;
+}
+
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    background-color: #333333;
+}
+
+footer div {
+    width: 1200px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Revenant.css">
+    <title>Revenant</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Revenant</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "The Revenant" , realizzato durante le lezioni di Sound Design, consisteva nel
+                    reinterpretare una scena iconica in cui il protagonista apre un cavallo e si rifugia al suo interno,
+                    sostituendo l'audio originale con una traccia sonora completamente ricreata da zero.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sviluppare abilità tecniche nella e modifica dei suoni, esplorare come ricreare l'atmosfera di
+                        una scena intensa e migliorare la capacità di sincronizzazione tra audio e immagini.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Trovare e adattare suoni realistici per rappresentare fedelmente dettagli complessi e crudi, come
+                        il rumore della pelle, il vento ei movimenti interni, bilanciandoli per non sovrastare
+                        l'intensità emotiva della scena.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Utilizzando Adobe Audition, implementato e modificato suoni specifici come strappi di tessuti,
+                        rumori di liquidi e vento. Tramite equalizzazione, compressione e stratificazione, ho integrato
+                        ogni elemento sonoro per creare un'esperienza credibile e immersiva, enfatizzando il dramma e il
+                        realismo della scena.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="Revenant" controls>
+                    <source src="Sound Design/Revenant/revenant_almirinnocenti.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

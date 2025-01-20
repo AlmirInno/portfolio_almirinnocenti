@@ -1,0 +1,273 @@
+* {
+    font-family: "Fredoka", sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    width: 1920px;
+    display: block;
+    position: absolute;
+}
+
+
+/* Menu principale */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Allinea verticalmente il contenuto */
+    line-height: 60px;
+    position: fixed;
+    z-index: 1000;
+    /* Mantiene il menu in cima */
+    margin-top: -60px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Menu a tendina */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    z-index: 1;
+    padding: 0 px;
+    top: 100%;
+    /* Fa apparire il menu sotto la voce principale */
+}
+
+.dropdown-content li {
+    text-align: left;
+    width: 600px;
+    margin: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+/* Mostra il menu a tendina quando il mouse passa sopra */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effetti hover per le voci principali */
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: green;
+
+}
+
+
+.LogoNav {
+    margin-right: 900px;
+    font-weight: bolder;
+    color: green;
+    font-size: 1.4rem;
+}
+
+.scopri {
+    width: 180px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+    background-color: #333333;
+    color: greenyellow;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.scopri:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+main {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    color: white;
+    height: 100%;
+}
+
+.info,
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: greenyellow;
+}
+
+form {
+    width: 80%;
+    padding: 20px;
+    background-color: #252525;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    border-radius: 5px;
+    margin: 10px 0px 30px 0px;
+    border: none;
+    color: white;
+}
+
+label {
+    margin: 20px 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form div {
+    width: 100%;
+    margin: 0px
+}
+
+#box {
+    height: 300px;
+    width: 100%;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bottoni {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.bottoni input {
+    height: 40px;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 15px #252525;
+    border-radius: 5px;
+}
+
+
+.bottoni input:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+b {
+    font-size: 0.8rem;
+    color: rgb(184, 184, 184)
+}
+
+.info div {
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+}
+
+.info div h3 {
+    margin-top: 50px;
+    font-size: 1.4rem;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a,
+label {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    background-color: #333333;
+}
+
+footer div {
+    width: 1200px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    font-size: 1rem;
+}

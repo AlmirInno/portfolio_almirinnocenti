@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="We like coffee too.css">
+    <title>We lik coffee too</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>We like coffee too</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Durante il primo anno al CSIA, ho progettato un formulario partendo da un mockup esistente, con
+                    l'obiettivo di mettere in pratica le funzionalità dei form e di aggiungere elementi come immagini di
+                    sfondo, animazioni sui bottoni e l’allineamento dei contenuti con display: flex.
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L’obiettivo era utilizzare i vari tipi di input (testuali, textarea, checkbox, ecc.) all'interno
+                        di un formulario, rendere interattivi i bottoni con animazioni, aggiungere un'immagine di sfondo
+                        e applicare display: flex per allineare il contenuto in due colonne affiancate.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata combinare le funzionalità di form con l’animazione dei bottoni e
+                        l’utilizzo di display: flex per gestire il layout in modo ordinato, mantenendo un design
+                        visivamente interessante e funzionale.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho creato il formulario con HTML per la struttura e CSS per lo stile, utilizzando `display: flex`
+                        per l’allineamento del contenuto e animando i bottoni con effetto hover. Ho inserito un'immagine
+                        di sfondo per arricchire il design, mantenendo coerenza con il mockup iniziale.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Secondo anno/Formulario 2/Form-we-like-coffee-too/form_portFolio.jpg"
+                        alt="WeLikeCoffeetoo" id="WeLikeCoffeetoo">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://welikecoffeetoo.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly>
+                      <!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>We like cofee too</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <section><img src="form1.jpg" alt="Logo"></section>
+            <section>
+                <h2>Dati personali</h2>
+            </section>
+        </header>
+
+        <section class="form-box">
+            <form action="a" method="post">
+                <section>
+                    <div class="col-sx">
+                        <div>
+                            <label for="name">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                    
+                    
+                        <div>
+                            <label for="lastname">Cognome</label>
+                            <input type="text" name="lastname" id="lastname">
+
+                        </div>
+                    
+
+                    <div>
+
+                        <label for="Città">Città</label>
+                        <select name="Città" id="Città">
+                            <option value="Bellinzona">Bellinzona</option>
+                            <option value="Locarno">Locarno</option>
+                            <option value="Lugano"> Lugano</option>
+                        </select>
+
+                    </div>
+
+                    
+                        <div>
+                            Desidero ricevere una risposta?
+                            <label for="si">Si</label>
+                            <input type="radio" name="risposta" id="si">
+
+                            <label for="no">No</label>
+                            <input type="radio" name="risposta" id="no">
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-dx">
+                            <label for="messaggio">Messaggio</label>
+                            <div name="messaggio" id="messaggio"> messaggio</div> //Ho dovuto cambiare il tag  textarea di "messaggio" con un tag div in quanto crea interferenza con il codice di questo portfolio, consiglio di reimpostare il tag textarea per farlo funzionare
+                        </div>
+                    </div>
+
+                </section>
+
+                <div>
+                    <button type="submit">invia richesta</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
+                    </textarea>
+
+                    <textarea class="code-editor-css" readonly>* {
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        background-color: #35beff;
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin: 0;
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                    }
+                    
+                    main {
+                        width: 960px;
+                        background-color: #4ac9ff;
+                        padding: 20px;
+                    
+                    }
+                    
+                    header img {
+                        width: 50%;
+                        height: auto;
+                    
+                    }
+                    
+                    .form-box form section {
+                        display: flex;
+                    }
+                    
+                    
+                    .form-box section>div {
+                        width: 50%;
+                    }
+                    
+                    .form-box .col-sx>div {
+                        margin-bottom: 25px;
+                    
+                    }
+                    
+                    .form-box .col-sx {
+                        padding-left: 10px
+                    }
+                    
+                    .form-box .col-dx {
+                        padding-left: 10px
+                    }
+                    
+                    input,
+                    textarea,
+                    select {
+                        width: 100%;
+                        background-color: #7bb5f9;
+                        padding: 15px 5px;
+                        border: none;
+                        color: white;
+                    
+                    }
+                    
+                    textarea {
+                        height: 223px;
+                    }
+                    
+                    input[type="radio"] {
+                        width: 20px;
+                        
+                    }
+                    
+                    form button {
+                        background-color: #4ac9ff;
+                        padding: 16px 32px;
+                        border: 1px solid white;
+                        color: white;
+                        border-radius: 50px;
+                        transition: background-color 0.2s ease-in-out;
+                    }
+                    
+                    form button:hover {
+                        cursor: pointer;
+                        cursor: hand;
+                        color: #7bb5f9;
+                    }</textarea>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario Hotel.css">
+    <title>Formulario Hotel</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Formulario Hotel</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Durante il primo anno al CSIA, durante le lezioni di programmazione web, ho creato un formulario per
+                    la prenotazione di un albergo. L'obiettivo
+                    era sviluppare un prototipo di modulo per raccogliere le informazioni necessarie a completare una
+                    prenotazione.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L’obiettivo era progettare un formulario semplice e funzionale, utilizzando elementi HTML5 come
+                        "fieldset", "legend" e vari tipi di input, come testo, email e selezioni, per raccogliere i dati
+                        degli utenti in modo chiaro e ordinato. Ho anche utilizzato display: flex per migliorare
+                        l’allineamento degli elementi.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata gestire correttamente la disposizione degli elementi all’interno del
+                        formulario e garantire che i vari tipi di input fossero posizionati in modo intuitivo per
+                        l’utente, utilizzando correttamente flex.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato display: flex per disporre gli elementi del formulario in modo ordinato, con
+                        l’aggiunta di
+                        "fieldset" e "legend" per migliorare la chiarezza. Ogni tipo di input è stato configurato per
+                        raccogliere le informazioni necessarie alla prenotazione, come il nome, la data e il numero
+                        di persone.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Secondo anno/form_hotel_almirinnocenti/Form-Hotel/img/HotemlForm.png"
+                        alt="FormularioHotel" id="FormularioHotel">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://formhotel.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly><!DOCTYPE html>
+                        <html lang="it">
+                        
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Form hotel</title>
+                            <link rel="stylesheet" href="style.css">
+                        </head>
+                        
+                        <body>
+                            <main>
+                                <div class="title">
+                                    <h1>PRENOTA ORA!</h1>
+                                </div>
+                                <form action="#" method="post">
+                                    <fieldset>
+                                        <legend>Prenotazione</legend>
+                                        <div>
+                                            <label for="rooms"> Numero di stanze</label>
+                                        </div>
+                                        <div>
+                                            <select name="rooms" id="rooms">
+                                                <option value="camera">1 camera</option>
+                                                <option value="2 camere">2 camere</option>
+                                                <option value="3 camere">3 camere</option>
+                                                <option value="4 camere">4 camere</option>
+                                                <option value="5 camere">5 camere</option>
+                                            </select>
+                                        </div>
+                        
+                        
+                                        <div>
+                                            <p>Colazione inclusa?</p>
+                                        </div>
+                        
+                                        <div class="risposta">
+                                            <div><label for="Si"> Si</label></div>
+                                            <div><input type="checkbox" name="Si" value="Si"></div>
+                                            <div><label for="No"> No</label></div>
+                                            <div><input type="checkbox" name="risposta" value="No"></div>
+                                        </div>
+                        
+                        
+                                        <div class="adults">
+                                            <div><label for="adults">Numero adulti</label></div>
+                                            <select name="adults" id="adults">
+                                                <option value="adult">1 adulto</option>
+                                                <option value="2 adults">2 adulti</option>
+                                                <option value="3 adults">3 adulti</option>
+                                                <option value="4 adults">4 adulti</option>
+                                                <option value="5 adults">5 adulti</option>
+                                                <option value="6 adults">6 adulti</option>
+                                                <option value="7 adults">7 adulti</option>
+                                                <option value="8 adults">8 adulti</option>
+                                                <option value="9 adults">9 adulti</option>
+                                                <option value="10 adults">10 adulti</option>
+                                            </select>
+                                        </div>
+                        
+                                        <div class="kids">
+                                            <div><label for="kids">Numero bambini</label></div>
+                                            <div><select name="kids" id="kids">
+                                                    <option value="kids">1 bambino</option>
+                                                    <option value="kids">2 bambini</option>
+                                                    <option value="kids">3 bambini</option>
+                                                    <option value="kids">4 bambini</option>
+                                                    <option value="kids">5 bambini</option>
+                                                    <option value="kids">6 bambini</option>
+                                                    <option value="kids">7 bambini</option>
+                                                    <option value="kids">8 bambini</option>
+                                                    <option value="kids">9 bambini</option>
+                                                    <option value="kids">10 bambini</option>
+                                                    <option value="kids">11 bambini</option>
+                                                    <option value="kids">12 bambini</option>
+                                                    <option value="kids">13 bambini</option>
+                                                    <option value="kids">14 bambini</option>
+                                                    <option value="kids">15 bambini</option>
+                                                </select></div>
+                                        </div>
+                        
+                                        <div>
+                                            <p>Animali da compagnia?</p>
+                                        </div>
+                        
+                                        <div class="risposta">
+                                            <div><label for="Si">Si</label></div>
+                                            <div><input type="checkbox" name="Si" value="Si"></div>
+                                            <div><label for="No">No</label></div>
+                                            <div><input type="checkbox" name="No" value="No"></div>
+                                        </div>
+                                    </fieldset>
+                        
+                                    <fieldset>
+                                        <legend>
+                                            Dati personali
+                                        </legend>
+                        
+                                        <div>
+                                            <div><label for="nome">Nome</label></div>
+                                            <div><input type="text" name="nome" id="nome" placeholder="Enter your full name"></div>
+                                            <div><label for="cognome">Cognome</label></div>
+                                            <div><input type="text" name="cognome" id="cognome" placeholder="Enter your full name"></div>
+                                            <div><label for="number">Numero di telefono</label></div>
+                                            <div><input type="tel" name="number" id="number" placeholder="+417..."></div>
+                                            <div><label for="email"></label>E-mail</div>
+                                            <div><input type="email" name="email" id="email" placeholder="Enter your full e-mail"></div>
+                                        </div>
+                        
+                                        <div class="button">
+                                            <div> <button type="reset">Indietro</button></div>
+                                            <div><button type="submit">Prenota</button></div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </main>
+                        
+                        </body>
+                        
+                        </html>
+                    </textarea>
+
+                    <textarea class="code-editor-css" readonly>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-image: linear-gradient(white, rgb(132, 248, 248));
+                            height: 100vh;
+                        }
+                        
+                        main {
+                            width: 960px;
+                            background-color: white;
+                            border-radius: 20px;
+                            box-shadow: 5px 5px 20px rgba(0, 108, 248, 0.328);
+                        }
+                        
+                        form {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 900px;
+                            margin-left: 30px;
+                        }
+                        
+                        input[type="text"],
+                        input[type="number"],
+                        input[type="tel"],
+                        input[type="email"] {
+                            width: 100%;
+                            height: 30px;
+                            margin: 5px 0px 20px -5px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                        }
+                        
+                        select {
+                            width: 100%;
+                            height: 30px;
+                            margin: 5px 10px 10px -5px;
+                        }
+                        
+                        .adults {
+                            margin-top: 25px;
+                        }
+                        
+                        .kids {
+                            margin-top: 10px;
+                        }
+                        
+                        
+                        fieldset {
+                            width: 480px;
+                            margin: 10px 5px 30px 5px;
+                            padding-top: 30px;
+                            border-radius: 20px;
+                        }
+                        
+                        .title {
+                            width: 250px;
+                            margin-left: calc(50% - 75px);
+                        }
+                        
+                        h1 {
+                            font-size: 30px;
+                        }
+                        
+                        .risposta {
+                            display: flex;
+                            justify-content: space-around;
+                            width: 90px;
+                            margin-bottom: 30px;
+                            margin-left: 320px;
+                            margin-top: -30px;
+                            margin-bottom: 0px;
+                        }
+                        
+                        
+                        .button {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 400px;
+                            margin-top: 70px;
+                        }
+                        
+                        
+                        button {
+                            width: 100px;
+                            height: 30px;
+                            border-radius: 50px;
+                            border: none;
+                            background: rgb(100, 210, 237);
+                            color: white;
+                            margin: 50px 0px 20px 0px;
+                        }
+                        
+                        button:hover {
+                            background: rgb(0, 174, 255);
+                        }
+                        
+                        p {
+                            margin-top: 45px;
+                        }
+                    </textarea>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html+è

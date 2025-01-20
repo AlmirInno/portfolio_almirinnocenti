@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePod.css">
+    <title>Audio Spectrum</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Audio Spectrum</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Audio Spectrum" , realizzato durante il secondo anno al CSIA nelle lezioni di animazione
+                    2D, consisteva nella creazione di un video promozionale per l' HomePod di Apple . L'animazione
+                    mostra una cassa con il logo Apple, circondata da elementi grafici musicali che si muovono a ritmo
+                    di musica, richiamando la precisione e la qualità sonora del prodotto.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sviluppare un'animazione dinamica capace di rappresentare visivamente il suono, mettendo in
+                        evidenza la potenza e il design innovativo dell'HomePod.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata creare un'animazione sincronizzata al ritmo musicale, garantendo
+                        fluidità e coerenza estetica. Inoltre, ho lavorato per integrare in modo armonioso gli effetti
+                        grafici con il logo Apple.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Utilizzando After Effects, ho progettato uno spettro audio visivamente accattivante,
+                        sincronizzando i movimenti grafici al brano musicale selezionato. L'aggiunta di effetti di luce
+                        in movimento ha reso l'animazione più immersiva, enfatizzando l'esperienza sonora e il design
+                        dell'HomePod, e offrendo una rappresentazione visiva del suono di alta qualità.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="AudioSpectrum" controls>
+                    <source src="Animazioni 2D/Secondo anno/Motion/Audio_spectrum_Master.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

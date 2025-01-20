@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario4.css">
+    <title>Formulario 4</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Formulario anonimo</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    Durante il primo anno al CSIA, ho progettato un piccolo formulario statico e anonimo, con
+                    l'obiettivo di esercitarmi nell'uso delle funzionalità dei form.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>
+                        L’obiettivo era mettere in pratica l'utilizzo dei vari tipi di input all'interno di un
+                        formulario, comprendendo come gestire diversi campi come testo e password.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata configurare correttamente ogni tipo di input per garantire una buona
+                        esperienza utente, rispettando la struttura, le gerarchie e il funzionamento del form.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato HTML per creare il formulario, includendo diversi tipi di input e assicurandomi che
+                        ciascuno fosse configurato correttamente, mantenendo il progetto semplice e statico, al quale
+                        successivamente ho applicato il CSS.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Secondo anno/Formulario 1/Formulario-4/Form4-2.jpg" alt="Formulario4"
+                        id="Formulario4">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://modulo-4.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly><!DOCTYPE html>
+                        <html lang="it">
+                        
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Formulario</title>
+                            <link rel="stylesheet" href="style.css">
+                        
+                        </head>
+                        
+                        <body>
+                            <section>
+                                <div class="testo">
+                                    <h1>Log in</h1>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex incidunt, voluptatum. </p>
+                                </div>
+                                <div class="genitore">
+                                    <form action="#" method="POST">
+                                        <div><label>User name</label></div>
+                                        <div><input type="text" name="User name"></div>
+                        
+                                        <div><label>Password</label></div>
+                                        <div><input type="text" name="password"></div>
+                                        <div class="button"><button type="submit">Log in</button> </div>
+                                    </form>
+                                    <div><a href="index.html"> Forgot passowerd?</a></div>
+                                </div>
+                            </section>
+                        </body>
+                        
+                        </html></textarea>
+
+                    <textarea class="code-editor-css" readonly>body {
+                        display: flex;
+                        align-items: center;
+                        height: 100vh;
+                    }
+                    
+                    section {
+                        margin: 0 auto;
+                        width: 300px;
+                        box-shadow: 5px 5px 20px rgb(206, 205, 205);
+                        border-radius: 10px;
+                    }
+                    
+                    article div p {
+                        font-size: 16px;
+                        color: grey;
+                        margin: 5px;
+                    }
+                    
+                    article div h1 {
+                        margin: 5px;
+                        font-family: sans-serif Arial, Helvetica, sans-serif;
+                    }
+                    
+                    .testo {
+                        margin: 20px;
+                    }
+                    
+                    .genitore {
+                        margin: 20px;
+                        position: relative;
+                    }
+                    
+                    label,
+                    input {
+                        width: 240px;
+                        height: 30px;
+                        margin: 5px;
+                    }
+                    
+                    label {
+                        font-size: 16px;
+                        color: grey;
+                    }
+                    
+                    input {
+                        background-color: rgb(250, 243, 243);
+                        border-radius: 5px;
+                        border: 0px;
+                    }
+                    
+                    button {
+                        width: 100%;
+                        height: 40px;
+                        background-color: red;
+                        color: white;
+                        border-radius: 5px;
+                        border: 0px;
+                        margin: 50px 0px 10px 0px;
+                    }
+                    
+                    a {
+                        margin-top: 20px;
+                        position: absolute;
+                        bottom: 90px;
+                        left: 130px;
+                        color: red;
+                    } </textarea>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html+è

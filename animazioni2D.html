@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down" />
+    <link rel="stylesheet" href="animazioni2D.css">
+    <title>Animazioni 2D</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA
+                        ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primo carosello -->
+        <div class="carousel" id="carousel1">
+            <h1>animazioni 2D </h1>
+            <div class="carousel-inner" id="carouselInner1">
+
+                <div class="card" id="card1">
+                    <a href="PiuOMeno.html"><img src="Animazioni 2D/Quarto anno/Piuomeno/Img/Screen_piuomeno.png"
+                            alt="PiuMeno"></a>
+                    <h2>Più o meno</h2>
+                    <p>
+                        Esplora il progetto che ho creato con grafiche ispirate alla realtà virtuale, fondendo
+                        l'estetica di "Tron" e
+                        "Ready Player One" offrendo un'esperienza visiva innovativa per il gioco televisivo.</p>
+                </div>
+
+                <div class="card" id="card2">
+                    <a href="MartialGear.html"> <img src="Animazioni 2D/Quarto anno/Landingpage/Img/Logo_vetical.jpg"
+                            alt="Martial gear"></a>
+                    <h2>Martial gear</h2>
+                    <p>Esplora il progetto Martial Gear! Una landing page per un sito di articoli di arti
+                        marziali da ring, che offre un design dinamico e accattivante per gli appassionati di
+                        sport da combattimento. </p>
+                </div>
+
+                <div class="card" id="card6">
+                    <a href="LaNotteDelRacconto.html"> <img
+                            src="Animazioni 2D/Quarto anno/La notte del racconto/Settimane gialle 2/img/cover book front_long.jpg"
+                            alt="ThinkGreen"></a>
+                    <h2>La notte del racconto</h2>
+                    <p>Un progetto che ha dato vita a un'animazione coinvolgente che racconta la storia di Narciso con
+                        un design ispirato all'arte greca e alle trasformazioni visive di Escher.</p>
+                </div>
+
+
+                <div class="card" id="card3">
+                    <a href="SnapShot.html"> <img
+                            src="Animazioni 2D/Quarto anno/Snapshot_almirinnocenti/img/Snapshots_almirinnocenti_vertical_long.jpg"
+                            alt="SnapShot"></a>
+                    <h2>Snapshot</h2>
+                    <p>Esplora "Snapshot", un'animazione di motion graphics creata per promuovere i Metallica su MTV! Un
+                        viaggio visivo che celebra l'energia della band e il dinamismo del canale. </p>
+                </div>
+
+
+                <div class="card" id="card4">
+                    <a href="WeTransfer.html"> <img src="Animazioni 2D/Quarto anno/wetrasfer/wetransfer_screenshot.png"
+                            alt="WeTransfer"></a>
+                    <h2>Wetransfer</h2>
+                    <p>Un progetto che unisce animazione 2D e 3D per
+                        promuovere la formazione in Interactive Media Design in modo innovativo e visivamente
+                        coinvolgente.</p>
+                </div>
+
+                <div class="card" id="card5">
+                    <a href="Challange.html"> <img src="Animazioni 2D/Quarto anno/Challange/Treno_1.png"
+                            alt="Challange"></a>
+                    <h2>Challange</h2>
+                    <p>Guarda l'animazione del treno FFS! Clicca per scoprire il progetto creato durante una sfida di
+                        animazione 2D al CSIA e lasciati trasportare da un treno che scorre sui binari con stile! </p>
+                </div>
+
+            </div>
+
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(1)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="RollDown" style="color: white;">
+                <p>Scorri verso il basso</p>
+                <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                </span>
+            </div>
+        </div>
+
+        <!-- Secondo carosello -->
+        <div class="carousel" id="carousel2">
+            <div class="carousel-inner" id="carouselInner2">
+
+                <div class="card" id="card6.1">
+                    <a href="ThinkGreen.html"> <img src="Animazioni 2D/Terzo anno/Thinkgreen/img/Thinkgreen.png"
+                            alt="ThinkGreen"></a>
+                    <h2>Think green</h2>
+                    <p>Scopri "Think Green", un progetto che promuove la sostenibilità e le energie rinnovabili
+                        attraverso due animazioni 2D progettate con After Effects e le sue opzioni di trasformazione
+                        degli oggetti.</p>
+                </div>
+
+                <div class="card" id="card7">
+                    <a href="HappyDog.html"> <img
+                            src="Animazioni 2D/Terzo anno/Happy_dog_almirinnocenti/img/HappyDog.png" alt="HappyDog"></a>
+                    <h2>Happy Dog</h2>
+                    <p>Scopri "Happy Dog", un progetto che unisce animazione 2D e codice di programmazione per creare
+                        una scena vivace con
+                        cani che corrono su un prato.</p>
+                </div>
+
+                <div class="card" id="card8">
+                    <a href="TicinoBirra.html"> <img src="Animazioni 2D/Terzo anno/Beer_almirinnocenti/img/beer.png"
+                            alt="Beer"></a>
+                    <h2>Ticino birra</h2>
+                    <p>Una animazione 2D in After Effects che mostra una bottiglia di birra in
+                        rotazione mentre entra in scena, mettendo in pratica i principi di animazione e l'integrazione
+                        tra Illustrator e After Effects.</p>
+                </div>
+
+                <div class="card" id="card9">
+                    <a href="Magnum.html"> <img src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_vertical_long.jpg"
+                            alt="Magnum"></a>
+                    <h2> Magnum</h2>
+                    <p>Esplora "Magnum", una landing page animata con effetti di parallasse, progettata in Adobe XD per
+                        presentare i prodotti Magnum in modo accattivante e interattivo. </p>
+                </div>
+
+
+                <div class="card" id="card10">
+                    <a href="Bottiglie.html"><img
+                            src="Animazioni 2D/Terzo anno/Bottiglie/img/Bottiglie_vertical_long.jpg"
+                            alt="Bottiglie"></a>
+                    <h2>Heineken</h2>
+                    <p>Esplora "Heineken", una animazione in parallasse con ciclo continuo, dove le
+                        animazioni dei vari prodotti si attivano al clic per un'esperienza interattiva unica.</p>
+                </div>
+
+                <div class="card" id="card11">
+                    <a href="Sneakers.html"> <img src="Animazioni 2D/Terzo anno/Sneakers/img/Sneakers.png"
+                            alt="Sneakers"></a>
+                    <h2>Sneakers</h2>
+                    <p>Esplora "Sneakers", <br> un'animazione interattiva in Adobe XD dove al passaggio del mouse si
+                        attiva
+                        un effetto scala per enfatizzare il design dei prodotti.</p>
+                </div>
+
+            </div>
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(2)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(2)">&#10095;</button>
+            </div>
+
+            <div class="RollDown" style="color: white;">
+                <p>Scorri verso il basso</p>
+                <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                </span>
+            </div>
+        </div>
+
+        <!-- Terzo carosello -->
+        <div class="carousel" id="carousel3">
+            <div class="carousel-inner2" id="carouselInner3">
+
+
+                <div class="card" id="card12">
+                    <a href="HomePod.html"> <img src="Animazioni 2D/Secondo anno/Motion/img/RadioSpectrum.png"
+                            alt="AudioSpectrum"></a>
+                    <h2>Audio Spectrum</h2>
+                    <p>Esplora "Audio Spectrum", <br> un'animazione che promuove HomePod di Apple, combinando effetti
+                        visivi
+                        musicali sincronizzati con il ritmo della musica.</p>
+                </div>
+                <div class="card" id="card13">
+                    <a href="PaolaLenti.html"> <img src="Animazioni 2D/Secondo anno/PaolaLenti/Immagini/Paolalenti.png"
+                            alt="PaolaLenti"></a>
+                    <h2>Paola Lenti</h2>
+                    <p>"Paola Lenti", <br> un'animazione 2D minimale che valorizza il design tessile con transizioni
+                        eleganti ed elementi grafici colorati.</p>
+                </div>
+
+                <div class="card" id="card14">
+                    <a href="Globo.html"> <img src="Animazioni 2D/Secondo anno/CARTINA/img/Globo.png" alt="Globo"
+                            style="color: white; text-align: center; line-height: 450px; font-size: larger;"></a>
+                    <h2>Globo</h2>
+                    <p>Esplora "Globo", <br>un'animazione 2D che segue il percorso di un aereo su una mappa, tracciando
+                        il
+                        suo viaggio con precisione grafica. </p>
+                </div>
+
+                <div class="card" id="card15">
+                    <a href="TrackAndKey.html"> <img src="Animazioni 2D/Secondo anno/Track and Key/img/TrckAndKey.png"
+                            style="color: white; text-align: center; line-height: 450px; font-size: larger;"
+                            alt="Track and key"></a>
+                    <h2>Track and Key</h2>
+                    <p>Esplora "Track and Key", <br> un progetto che applica tecniche di tracking su After Effects per
+                        integrare animazioni e testo in video reali.</p>
+                </div>
+
+                <div class="card" id="card16">
+                    <a href="MonitorTracker.html"> <img
+                            src="Animazioni 2D/Secondo anno/Track_monitor_almirinnocenti/img/TrackMonitor.png"
+                            alt="TrackMonitor"></a>
+                    <h2>Monitor Tracker</h2>
+                    <p>
+                        Esplora "Monitor Tracker",<br>
+                        un progetto che applica il tracciamento su green screen per
+                        integrare un'animazione realizzata in After Effects su un PC.
+                    </p>
+                </div>
+            </div>
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(3)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(3)">&#10095;</button>
+            </div>
+
+            <div class="RollDown" style="color: white;">
+                <p>Scorri verso il basso</p>
+                <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                </span>
+            </div>
+        </div>
+
+        <!-- Quarto carosello -->
+        <div class="carousel" id="carousel4">
+            <div class="carousel-inner2" id="carouselInner4">
+
+
+                <div class="card" id="card17">
+                    <a href="HeartBeat.html"> <img
+                            src="Animazioni 2D/Primo anno/HeartBeat/img/HeartBeat_vertical_long.jpg"
+                            alt="HeartBeat"></a>
+                    <h2>Heartbeat</h2>
+                    <p>Esplora "HeartBeat", un progetto che combina animazione ed elementi audio per creare un effetto
+                        elettrocardiogramma
+                        sincronizzato con il battito cardiaco e il logo Saleen.</p>
+                </div>
+                <div class="card" id="card18">
+                    <a href="QuickStep.html"> <img
+                            src="Animazioni 2D/Primo anno/Quickstep/Img/QuickStep_vertical_long.jpg"
+                            alt="Quickstep"></a>
+                    <h2>Quickstep</h2>
+                    <p>Scopri "Quickstep", <br> un progetto che trasforma un logo statico in un'animazione ritmica e
+                        dinamica
+                        sincronizzata con la musica.</p>
+                </div>
+
+                <div class="card" id="card19">
+                    <a href="Luceplan.html"> <img
+                            src="Animazioni 2D/Primo anno/Verifiche/TEST_LUCEPLAN/TEST_LUCEPLAN_1IMD_Almirinnocenti/img/Luceplan1.png"
+                            alt="Luceplan1"
+                            style="color: white; text-align: center; line-height: 450px; font-size: larger;"></a>
+                    <h2>Luceplan</h2>
+                    <p>Scopri "Luceplan", <br> un progetto che fonde animazioni luminose in stile neon con eleganti
+                        video
+                        promozionali per il Salone del Mobile di Milano. </p>
+                </div>
+
+                <div class="card" id="card20">
+                    <a href="Auto.html"> <img src="Animazioni 2D/Primo anno/AutoMobile/img/Auto_long.jpg"
+                            style="color: white; text-align: center; line-height: 450px; font-size: larger;"
+                            alt="Auto"></a>
+                    <h2>Auto su collina</h2>
+                    <p>
+                        Esplora "Auto su Collina", un'animazione che simula il movimento di un'auto in un paesaggio
+                        dinamico, ideale per apprendere i fondamenti dell'animazione 2D.</p>
+                </div>
+
+                <!-- <div class="card" id="card21">
+                        <a href=""> <img src="Animazioni 2D/Primo anno/Verifiche/TEST_LUCEPLAN/TEST_LUCEPLAN_1IMD_Almirinnocenti/img/Luceplan2B.png" alt="Luceplan2B"></a>
+                        <h2>Luceplan 2B</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, eos aliquam! Aperiam
+                            commodi quam quos provident voluptatibus. Corrupti eaque totam soluta esse tenetur! </p>
+                    </div> -->
+            </div>
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(4)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(4)">&#10095;</button>
+            </div>
+            <div class="RollDown" style="color: white;">
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        const cardsToShow = 3;  // Numero di card da mostrare
+        const cardWidth = 395;   // Larghezza di ogni card
+        const margin = 5;        // Margine laterale
+
+        let currentIndex1 = 0;
+        let currentIndex2 = 0;
+        let currentIndex3 = 0;
+        let currentIndex4 = 0;
+
+        function updateCarousel(carouselNumber) {
+            let carouselInner;
+            let currentIndex;
+            let totalCards;
+
+            if (carouselNumber === 1) {
+                carouselInner = document.getElementById('carouselInner1');
+                currentIndex = currentIndex1;
+                totalCards = document.querySelectorAll('#carouselInner1 .card').length;
+
+            } else if (carouselNumber === 2) {
+                carouselInner = document.getElementById('carouselInner2');
+                currentIndex = currentIndex2;
+                totalCards = document.querySelectorAll('#carouselInner2 .card').length;
+
+            } else if (carouselNumber === 3) {
+                carouselInner = document.getElementById('carouselInner3');
+                currentIndex = currentIndex3;
+                totalCards = document.querySelectorAll('#carouselInner3 .card').length;
+
+            } else if (carouselNumber === 4) {
+                carouselInner = document.getElementById('carouselInner4');
+                currentIndex = currentIndex4;
+                totalCards = document.querySelectorAll('#carouselInner4 .card').length;
+            }
+
+            // Calcolo dell'offset per centrare esattamente 3 card
+            let offset = -(cardWidth + margin) * currentIndex;
+            carouselInner.style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextSlide(carouselNumber) {
+            if (carouselNumber === 1) {
+                // Permetti il ciclo completo, ma mostrano 3 card per volta
+                currentIndex1 = (currentIndex1 + 1) % (document.querySelectorAll('#carouselInner1 .card').length - cardsToShow + 1);
+                updateCarousel(1);
+
+            } else if (carouselNumber === 2) {
+                // Permetti il ciclo completo, ma mostrano 3 card per volta
+                currentIndex2 = (currentIndex2 + 1) % (document.querySelectorAll('#carouselInner2 .card').length - cardsToShow + 1);
+                updateCarousel(2);
+
+            } else if (carouselNumber === 3) {
+                // Permetti il ciclo completo, ma mostrano 3 card per volta
+                currentIndex3 = (currentIndex3 + 1) % (document.querySelectorAll('#carouselInner3 .card').length - cardsToShow + 1);
+                updateCarousel(3);
+
+            } else if (carouselNumber === 4) {
+                // Permetti il ciclo completo, ma mostrano 3 card per volta
+                currentIndex4 = (currentIndex4 + 1) % (document.querySelectorAll('#carouselInner4 .card').length - cardsToShow + 1);
+                updateCarousel(4);
+            }
+        }
+
+        function prevSlide(carouselNumber) {
+            if (carouselNumber === 1) {
+                currentIndex1 = (currentIndex1 - 1 + document.querySelectorAll('#carouselInner1 .card').length) % (document.querySelectorAll('#carouselInner1 .card').length - cardsToShow - 1);
+                updateCarousel(1);
+            } else if (carouselNumber === 2) {
+                currentIndex2 = (currentIndex2 - 1 + document.querySelectorAll('#carouselInner2 .card').length) % (document.querySelectorAll('#carouselInner2 .card').length - cardsToShow - 1);
+                updateCarousel(2);
+            } else if (carouselNumber === 3) {
+                currentIndex3 = (currentIndex3 - 1 + document.querySelectorAll('#carouselInner3 .card').length) % (document.querySelectorAll('#carouselInner3 .card').length - cardsToShow - 1);
+                updateCarousel(3);
+            } else if (carouselNumber === 4) {
+                currentIndex4 = (currentIndex4 - 1 + document.querySelectorAll('#carouselInner4 .card').length) % (document.querySelectorAll('#carouselInner4 .card').length - cardsToShow - 1);
+                updateCarousel(4);
+            }
+        }
+
+        // Gestione lampeggio elemento "RollDown"
+        const flickeringElements = document.querySelectorAll('.RollDown');
+        setInterval(() => {
+            flickeringElements.forEach((element) => {
+                element.style.opacity = element.style.opacity === '1' ? '0.5' : '1';
+            });
+        }, 1000);
+    </script>
+</body>
+
+
+
+</html>

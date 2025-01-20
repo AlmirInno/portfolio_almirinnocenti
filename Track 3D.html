@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Track 3D.css">
+    <title>Tracker 3D</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Tracker 3D</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Tracker 3D" è stato il mio primo esercizio di tracking 3D, realizzato durante le lezioni
+                    di animazione 3D al terzo anno del CSIA. Consisteva nell'integrare un modello tridimensionale in un
+                    video reale, applicando il tracking 3D per creare un'animazione realistica. Ho scelto un video
+                    online che mostrava una via di New York, inserendovi un'auto 3D.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Apprendere le basi del tracking 3D in Cinema 4D , gestire l'integrazione tra elementi reali e
+                        digitali, e ottenere un risultato realistico.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Rende il modello della macchina coerente con il movimento della fotocamera e la prospettiva del
+                        video, garantendo un'integrazione naturale e credibile.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho importato il video in Cinema 4D, dove ho applicato il tracking 3D per ricavare i punti di
+                        riferimento necessari. Successivamente, ho posizionato un modello 3D di una auto,
+                        sincronizzola con il movimento del video. Per migliorare la coerenza
+                        visiva, ho lavorato su luci e ombre, rendendo l'auto perfettamente integrata nel contesto
+                        urbano.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="Tracker3D" controls>
+                    <source src="Animazioni 3D/Tracker/video/Tracker3d_almir.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HarvestingHope.css">
+    <title>Harvesting Hope</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inroduzione">
+            <div class="title">
+                <h1>Harvesting Hope</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    "Harvesting Hope" è un progetto creato durante le Settimane Gialle al quarto anno del CSIA , che si
+                    è concentrato sulla realizzazione di un prototipo di sito web per promuovere un'associazione di
+                    agroforestazione. L'associazione si occupa di piantare alberi in tutto il mondo e, con l'aiuto di
+                    questo sito, gli utenti possono acquistare alberi per contribuire alla causa. Inoltre, ho progettato
+                    un'animazione che promuove l'iniziativa e incoraggia gli utenti ad agire, con un chiaro "call to
+                    action" per visitare il sito e partecipare attivamente.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L'obiettivo era creare una piattaforma web che fosse non solo informativa, ma anche
+                        accattivante e coerente, per sensibilizzare gli utenti sull'importanza
+                        dell'agroforestazione e incentivare l'acquisto di alberi attraverso un'esperienza coinvolgente.
+                        Inoltre, l'animazione doveva catturare l'essenza del progetto e stimolare una
+                        risposta concreta da parte degli utenti.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida è stata progettare un sito web che fosse funzionale, riuscendo
+                        a trasmettere un messaggio forte e chiaro sulla missione dell'associazione. In parallelo,
+                        l'animazione doveva essere abbastanza potente da emozionare l'utente e incentivarlo a compiere
+                        l'azione di acquistare un albero sul sito web.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Per il sito web, ho progettato una navigazione semplice e intuitiva, con elementi grafici che
+                        richiamano il tema della natura. L'animazione è stata creata per ispirare il pubblico, utilizzando colori e font coerenti. Infine, ho inserito una
+                        call to action chiara per incoraggiare
+                        gli utenti a visitare il sito e contribuire attivamente all'iniziativa di piantare alberi.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Web design/Adobe XD/Harvesting Hope/settimana gialla 3 (preesame)/logo HH_orizzontale.jpg"
+                        alt="HarvestingHope" id="HarvestingHope">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a
+                                href="Web design/Adobe XD/Harvesting Hope/settimana gialla 3 (preesame)/PRE_ESAME_AFC_IMD_2024/Innocentialmir_esameIMD_17.03.2024/Preesame_almirinnocenti.pdf"
+                                download="Web design/Adobe XD/Harvesting Hope/settimana gialla 3 (preesame)/PRE_ESAME_AFC_IMD_2024/Innocentialmir_esameIMD_17.03.2024/Preesame_almirinnocenti.pdf"
+                                class="">
+                                Scarica PDF</a></button>
+                        <button><a
+                                href="https://xd.adobe.com/view/8b7489ba-9920-4064-b4ba-9c02abfe9671-de27/?fullscreen">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+                <div class="galleria">
+                    <video id="VideoSponsor" controls>
+                        <source
+                            src="Web design/Adobe XD/Harvesting Hope/settimana gialla 3 (preesame)/PRE_ESAME_AFC_IMD_2024/Innocentialmir_esameIMD_17.03.2024/EsameIMD_almirinnocenti.mp4"
+                            alt="VideoSponsor">
+                        </source>
+                    </video>
+                </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

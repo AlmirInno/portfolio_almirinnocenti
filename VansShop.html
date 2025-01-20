@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="VansShop.css">
+    <title>VansShop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>VansShop</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Durante il terzo anno del corso di programmazione web al CSIA, mi è stato assegnato un progetto che
+                    prevedeva la creazione di una pagina di shop online a scelta. L'obiettivo principale era integrare
+                    JavaScript e la libreria jQuery per sviluppare un sistema interattivo che consentisse agli utenti di
+                    aggiungere prodotti al carrello.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>
+                        Ho progettato una pagina shop online dedicata a Vans, concentrandomi sull’integrazione di
+                        JavaScript e jQuery per creare un sistema d'acquisto che fosse funzionale e semplice da usare.
+                        L'obiettivo era offrire un'esperienza utente interattiva e ben strutturata.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata implementare il sistema di gestione del carrello con jQuery,
+                        assicurandomi che fosse intuitivo e coerente con l'estetica del brand Vans, oltre a gestire
+                        correttamente i dati degli articoli selezionati.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato jQuery per implementare funzionalità come l'aggiunta e la rimozione di articoli nel
+                        carrello e il calcolo del totale degli acquisti. Il sito è stato progettato per riflettere lo
+                        stile giovane e dinamico del brand, offrendo un’esperienza d’acquisto piacevole.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Terzo anno/Codice test_almirinnocenti/VansShop/img/vans_1.webp"
+                        alt="VansShop" id="VansShop">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://vansshop.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly><!DOCTYPE html>
+                        <html lang="en">
+                        
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Shop</title>
+                            <link rel="stylesheet" href="style.css">
+                        </head>
+                        
+                        <body>
+                        
+                            <main>
+                                <h1>Vans Shop</h1>
+                                <section class="box-article">
+                                    <article>
+                                        <figure>
+                                            <img src="img/vans_1.webp" alt="vans One">
+                                        </figure>
+                                        <div>
+                                            <span>180</span> CHF
+                                            <button type="button">Buy now</button>
+                                        </div>
+                        
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/vans_2.webp" alt="Vans Two">
+                                        </figure>
+                                        <div>
+                                            <span>218</span>CHF
+                                            <button type="button">Buy now</button>
+                                        </div>
+                        
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/vans_3.webp" alt="Vans Three">
+                                        </figure>
+                                        <div>
+                                            <span>146</span>CHF
+                                            <button type="button">Buy now</button>
+                                        </div>
+                        
+                                    </article>
+                                </section>
+                            </main>
+                            <aside>
+                                <button id="total">Total: 0 CHF</button>
+                                <div>
+                                    <div id="list"></div>
+                                </div>
+                            </aside>
+                            
+                        
+                        
+                            <script src="jquery-3.6.3.min.js"></script>
+                            <script>
+                                $(document).ready(function () {
+                                    var total = 0;
+
+                                    // Evento per aggiungere un prodotto al carrello
+                                    $('button').on('click', function () {
+                                        // Prendi lo span con il prezzo relativo al bottone cliccato
+                                        var priceText = $(this).siblings('span').text().trim(); // Seleziona lo span all'interno dello stesso div
+                                        var price = parseFloat(priceText.replace(/[^0-9.]/g, '')); // Estrai solo la parte numerica
+
+                                        if (!isNaN(price)) { // Controlla se il prezzo è un numero valido
+                                            total += price; // Aggiorna il totale
+                                            updateTotal();
+
+                                            // Aggiungi l'elemento alla lista con il bottone "delete"
+                                            $('#list').append('<div class="item"><span>' + price.toFixed(2) + ' CHF</span> <button class="delete">delete</button></div>');
+                                        } else {
+                                            alert("Errore: prezzo non valido");
+                                        }
+                                    });
+
+                                    // Event delegation per rimuovere un prodotto dalla lista
+                                    $('#list').on('click', 'button.delete', function () {
+                                        var itemPriceText = $(this).prev().text().trim();
+                                        var itemPrice = parseFloat(itemPriceText.replace(/[^0-9.]/g, ''));
+
+                                        if (!isNaN(itemPrice)) { // Controlla se il prezzo è un numero valido
+                                            // Sottrarre dal totale ma evitare che vada sotto zero
+                                            total = Math.max(total - itemPrice, 0); // Impedisce al totale di scendere sotto zero
+                                            updateTotal();
+                                        }
+
+                                        // Rimuovi l'elemento dalla lista
+                                        $(this).parent('.item').remove();
+                                    });
+
+                                    // Funzione per aggiornare il totale
+                                    function updateTotal() {
+                                        $('#total').text('Total: ' + total.toFixed(2) + ' CHF');
+                                    }
+                                });
+
+                            </script>
+                        
+                        
+                        </body>
+                        
+                        </html></textarea>
+
+                    <textarea class="code-editor-css" readonly>* {
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    
+                    body {
+                        background: linear-gradient(#ebebeb, #c2c2c2);
+                        height: 100vh;
+                        margin: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 16px;
+                        color: #333;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    main {
+                        background-color: #fff;
+                        border-radius: 8px;
+                        padding: 16px;
+                        margin-top: 24px;
+                        width: 800px;
+                        height: 80vh;
+                    }
+                    
+                    h1 {
+                        text-align: center;
+                        margin: 30px 0 50px 0;
+                    }
+                    
+                    section.box-article {
+                        display: flex;
+                        justify-content: space-between;
+                    
+                    }
+                    
+                    section.box-article article {
+                        width: 250px;
+                        background-color: #ebebeb;
+                        padding: 12px;
+                        border-radius: 4px;
+                    }
+                    
+                    section.box-article article figure {
+                        margin-bottom: 20px;
+                    }
+                    
+                    section.box-article article figure>img {
+                        width: 100%;
+                    }
+                    
+                    section.box-article article div {
+                        text-align: center;
+                    }
+                    
+                    section.box-article article div>span {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    
+                    section.box-article article div>button {
+                        padding: 12px 24px;
+                        background-color: #1664ff;
+                        border: 0;
+                        color: #fff;
+                        transition: background-color 0.2s ease-in-out;
+                        border-radius: 4px;
+                        display: block;
+                        margin: 20px auto 0 auto;
+                    
+                    }
+                    
+                    section.box-article article button:hover {
+                        background-color: #0f4ece;
+                        cursor: pointer;
+                    }
+                    
+                    aside {
+                        position: fixed;
+                        top: 24px;
+                        right: 0;
+                        background-color: #fff;
+                        width: 200px;
+                        padding: 12px;
+                        height: 80vh;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                    
+                    aside>div:first-child {
+                        height: 60px;
+                    }
+                    
+                    aside>div:last-child {
+                        height: calc(100% - 60px);
+                        overflow: auto;
+                    
+                    }
+                    
+                    aside div.item {
+                        padding: 8px 0;
+                    }
+                    
+                    aside button {
+                        background-color: #ebebeb;
+                        border: 1px solid #c2c2c2;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                    }
+                    
+                    aside button:hover {
+                        cursor: pointer;
+                        background-color: #c2c2c2;
+                    }
+                    </textarea>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

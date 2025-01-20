@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Chaplin.css">
+    <title>Chaplin</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Charlie Chaplin</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Charlie Chaplin", realizzato durante le prime lezioni di Sound Design, consisteva nel
+                    ricostruire la colonna sonora della celebre scena in cui i protagonisti mangiano una ciabatta. Per
+                    questo progetto ho registrato personalmente diversi suoni e ho utilizzato effetti sonori della
+                    libreria Serie 6000 per completare l'ambiente sonoro.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Imparare le basi della e dell'editing audio, esplorando l'integrazione tra suoni registrati e
+                        suoni pre-esistenti per arricchire la scena con realismo e coerenza.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Creare un'atmosfera fedele alla scena attraverso la registrazione diretta di suoni come il rumore
+                        della ciabatta e l'aggiunta di suoni provenienti dalla libreria Serie 6000, bilanciandoli per
+                        ottenere un mix coeso e credibile.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato un microfono per registrare suoni come la padella, mentre dalla Serie 6000 ho
+                        selezionato effetti per arricchire
+                        l'ambiente, come il rumore del vento. Ho montato e sincronizzato tutto con
+                        Adobe Audition, applicando equalizzazioni e ritocchi per ottenere un mix naturale e dinamico,
+                        che enfatizzasse l'umorismo e l'assurdità della scena.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="Chaplin" controls>
+                    <source src="Sound Design/chaplin_almirinnocenti/Chaplin_AI_AV.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Globo.css">
+    <title>Globo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Globo</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Globo", realizzato durante il secondo anno al CSIA nelle lezioni di animazione 2D,
+                    consisteva nel creare un'animazione che mostrava un aereo in grafica vettoriale mentre sorvolava una
+                    mappa. L'aereo lasciava una traccia del proprio percorso utilizzando uno strumento di tracciamento
+                    del percorso su After Effects.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sperimentare l'utilizzo delle opzioni di tracciamento del percorso e dei pennelli in After
+                        Effects per creare animazioni precise e dinamiche.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La principale difficoltà è stata utilizzare in modo efficace il tracciamento del pennello per
+                        generare percorsi coerenti e sincronizzati con il movimento dell'aereo, mantenendo un aspetto
+                        visivamente gradevole e fluido.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato una mappa in grafica vettoriale come sfondo e impostato il tracciamento del
+                        pennello per disegnare dinamicamente il percorso del viaggio in sincronia con il movimento
+                        dell'aereo. Le animazioni fluide e il controllo preciso dei vettori hanno permesso di creare un
+                        effetto realistico e accattivante, valorizzando l'interazione tra il percorso e l'aereo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="Globo" controls>
+                    <source src="Animazioni 2D/Secondo anno/CARTINA/Master_cartina.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

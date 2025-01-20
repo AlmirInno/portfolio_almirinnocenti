@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Auna.css">
+    <title>Auna</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Auna</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    Durante il secondo anno del corso di programmazione web al CSIA, mi è stato assegnato un esercizio
+                    che consisteva nel programmare una pagina di acquisto online per un negozio di articoli musicali. Il
+                    punto di partenza era un mockup esistente, che doveva essere tradotto in codice e reso completamente
+                    responsive.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>
+                        L’obiettivo era realizzare una pagina di acquisto online fedele al mockup fornito,
+                        ottimizzandola per la responsività. Doveva risultare funzionale, esteticamente gradevole e
+                        facilmente navigabile sia su desktop che su dispositivi mobili.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata rispettare fedelmente il design del mockup originale durante la fase
+                        di sviluppo, assicurandomi che ogni elemento fosse posizionato correttamente, che il layout
+                        rimanesse coerente anche durante l’adattamento ai diversi dispositivi e che il codice fosse
+                        pulito e funzionale.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato HTML e CSS con l’ausilio di media queries per rendere il design responsivo. Ho
+                        testato il sito su vari dispositivi per garantire che la struttura rimanesse coerente e che
+                        tutti gli elementi del mockup originale fossero ben rappresentati e funzionali su schermi di
+                        qualsiasi dimensione.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Quarto anno/Auna/Auna/img/layout_auna.png" alt="Auna" id="Auna">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://aunashop.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly>
+                        <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auna</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+        <div>
+            <ul>
+                <li><a href="/pages/Index.html">Homepage</a></li>
+                <li><a href="/pages/Index.html">Shop</a></li>
+                <li><a href="/pages/Index.html">Dove siamo</a></li>
+            </ul>
+        </div>
+        </nav>
+        
+        <div id="title">
+            <h1>
+            <b>auna</b> Online Shop
+            </h1>
+        </div>
+    </header>
+    <main>
+        <article>
+            <figure>
+                <img src="img/auna_peggy_sue.jpg">
+            </figure> 
+<div class="text">
+            <div>
+                <p><b>auna Peggy Sue</b></p>
+            </div>
+            <div>
+                <p>74.95 CHF</p>
+            </div> 
+            </div>
+            <div class="button">
+                <a href="/pages/Index.html"> Ordina ora</a>
+            </div>
+        </article>
+
+        <article>
+            <figure>
+                <img src="img/auna_sarah_ann.jpg">
+            </figure> 
+
+            <div class="text">
+            <div>
+                <p><b>auna Sarah Ann</b></p>
+            </div>
+            <div>
+                <p>159.95 CHF</p>
+            </div> 
+            </div>
+            <div class="button">
+                <a href="/pages/Index.html"> Ordina ora</a>
+            </div>
+        </article>
+
+        <article>
+            <figure>
+                <img src="img/auna_sarah_ann_dab.jpg">
+            </figure> 
+            <div class="text">
+            <div>
+                <p><b>auna Sarah Ann DAB</b></p>
+            </div>
+            <div>
+                <p>189.95 CHF</p>
+            </div> 
+            </div>
+            
+            <div class="button">
+                <a href="/pages/Index.html">Ordina ora</a>
+            </div>
+        </article>
+        
+    </main>
+    <footer>
+        <section>
+        <div><h2>Giradischi auna: l'amore per il vinile non tramonta mai</h2></div>
+        <div><p>L'ascolto della musica in vinile è tornato alla ribalta, o forse sarebbe piu giusto dire che non à mai andato in pensione. Sebbene l'avvento del CD e di altri supporti digitali avesse spinto molti a decretare che l'era del vinile fosse giunta al tramonto, sono molti gli apassionati di mucica che continuano ancora oggi a usare il giradischi e a preferire il vinile rispetto ai supporti digitali.</p></div>
+    </section>
+    </footer>
+
+</body>
+</html>
+                    </textarea>
+
+                    <textarea class="code-editor-css" readonly>
+                        body {
+                            font-family: Arial, Helvetica, sans-serif;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        header {
+                            width: 960px;
+                            margin: 0 auto;
+                        }
+                        
+                        /* Centra il contenuto di header e nav */
+                        nav {
+                            width: 100%;
+                            margin: 0 auto;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        
+                        nav div {
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        
+                        ul {
+                            display: flex;
+                            list-style: none;
+                        }
+                        
+                        li {
+                            margin: 10px;
+                        }
+                        
+                        h1 {
+                            width: 100%;
+                            text-align: center;
+                            /* Centra il testo all'interno di h1 */
+                            margin: 0;
+                        }
+                        
+                        @media (min-width: 960px){
+                            header {
+                                width: 960px;
+                            }
+                        
+                            nav {
+                                width: 960px;
+                                margin: 0;
+                                align-items: center;
+                                text-align: center;
+                            }
+                        
+                            main {
+                                width: 960px;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: nowrap;
+                            }
+                        
+                            footer {
+                                width: 960px;
+                                margin: 0 auto;
+                                margin-top: 50px;
+                                display: flex;
+                                flex-wrap: none;
+                            }
+                        
+                            h1 {
+                                display: flex;
+                                justify-content: center;
+                                width: 960px;
+                            }
+                            
+                        }
+                        
+                        /* Media query per schermi più grandi di 768px */
+                        @media (min-width: 700px) and (max-width: 960px){
+                            header {
+                                width: 100%;
+                            }
+                        
+                            nav {
+                                width: 100%;
+                                margin: 0;
+                                align-items: center;
+                                text-align: center;
+                            }
+                        
+                            main {
+                                width: 100%;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: nowrap;
+                            }
+                        
+                            footer {
+                                width: 100%;
+                                margin: 0 auto;
+                                margin-top: 50px;
+                                display: flex;
+                                flex-wrap: none;
+                            }
+                        
+                            h1 {
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                            }
+                        }
+                        
+                        /* Media query per schermi più piccoli di 700px */
+                        @media (min-width: 0px) and (max-width: 700px) {
+                        
+                            header {
+                                width: 100%;
+                            }
+                        
+                            nav {
+                                width: 100%;
+                                margin: 0;
+                                align-items: center;
+                                text-align: center;
+                                display: flex;
+                                justify-content: left;
+                            }
+                        
+                            main {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                            }
+                        
+                            footer {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                            }
+                        
+                            h1 {
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                            }
+                        }
+                        
+                        article {
+                            width: 300px;
+                            background-color: white;
+                        }
+                        
+                        figure {
+                            width: 100%;
+                            margin: 0px;
+                        }
+                        
+                        img {
+                            width: 100%;
+                        }
+                        
+                        .button {
+                            width: 200px;
+                            height: 35px;
+                            background-color: rgb(60, 122, 255);
+                            text-align: center;
+                            border-radius: 50px;
+                            margin: 30px;
+                            cursor: pointer;
+                        }
+                        
+                        .button a {
+                            color: white;
+                            line-height: 35px;
+                        }
+                        
+                        .button:hover {
+                            background-color: rgb(93, 143, 251);
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        section {
+                            margin: 30px;
+                        }
+                        
+                        .text {
+                            margin: 0px 0px 0px 30px;
+                        }
+                    </textarea>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

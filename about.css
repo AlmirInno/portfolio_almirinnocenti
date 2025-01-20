@@ -1,0 +1,644 @@
+* {
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    width: 1920px;
+    display: block;
+    position: absolute;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: greenyellow;
+    line-height: 50px;
+    width: 100%;
+    margin-left: 22%;
+    margin-bottom: 10px;
+}
+
+/* Menu principale */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Allinea verticalmente il contenuto */
+    line-height: 60px;
+    position: fixed;
+    z-index: 1000;
+    /* Mantiene il menu in cima */
+    margin-top: 0px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Menu a tendina */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    z-index: 1;
+    padding: 0 px;
+    top: 100%;
+    /* Fa apparire il menu sotto la voce principale */
+}
+
+.dropdown-content li {
+    text-align: left;
+    width: 600px;
+    margin: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    display: block;
+    padding: 0px 10px 0px 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+/* Mostra il menu a tendina quando il mouse passa sopra */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effetti hover per le voci principali */
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: green;
+
+}
+
+
+.LogoNav {
+    margin-right: 900px;
+    font-weight: bolder;
+    color: green;
+    font-size: 1.4rem;
+}
+
+.scopri {
+    width: 180px;
+    height: 60px;
+    margin: 0px;
+    border: none;
+    background-color: #333333;
+    color: greenyellow;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.scopri:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+main {
+    width: 100%;
+    background-color: #333333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.conteinerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    width: auto;
+    overflow: hidden;
+    box-shadow: 5px 0px 15px #1c1c1c;
+}
+
+/* Stile per le singole card */
+.card1,
+.card2,
+.card3 {
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    width: 500px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    box-shadow: 5px 0px 15px #1c1c1c;
+}
+
+
+/* Quando una card è espansa, le altre diventano più strette */
+.conteinerCard:has(.card1:hover) .card2,
+.conteinerCard:has(.card1:hover) .card3,
+.conteinerCard:has(.card2:hover) .card1,
+.conteinerCard:has(.card2:hover) .card3,
+.conteinerCard:has(.card3:hover) .card1,
+.conteinerCard:has(.card3:hover) .card2 {
+    width: 300px;
+    /* Larghezza delle card non espanse */
+}
+
+.conteinerCard:has(.card1:hover) .card2 .title,
+.conteinerCard:has(.card1:hover) .card3 .title,
+.conteinerCard:has(.card2:hover) .card1 .title,
+.conteinerCard:has(.card2:hover) .card3 .title,
+.conteinerCard:has(.card3:hover) .card1 .title,
+.conteinerCard:has(.card3:hover) .card2 .title {
+    width: 300px;
+    /* Larghezza dei title non espansi */
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 500px;
+    height: 700px;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0px;
+    -webkit-text-stroke: 0.3px greenyellow;
+    color: transparent;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+    font-size: 30rem;
+    transition: 0.5s ease;
+    -webkit-text-stroke: 1px greenyellow;
+    color: transparent;
+    margin: 0px;
+    width: 100%;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    width: 960px;
+    height: 700px;
+    background-color: none;
+}
+
+.card1:hover h2,
+.card2:hover h2,
+.card3:hover h2 {
+    font-size: 30rem;
+    color: greenyellow;
+    width: 100%;
+}
+
+.card1:hover h3,
+.card2:hover h3,
+.card3:hover h3 {
+    color: greenyellow;
+    transition: 0.5s ease;
+}
+
+.card-content {
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.card1:hover .card-content,
+.card2:hover .card-content,
+.card3:hover .card-content {
+    display: block;
+    background-color: #1c1c1c;
+    width: 100%;
+}
+
+.navigation {
+    width: 100%;
+    height: 40px;
+    background-color: #252525;
+    line-height: 40px;
+    display: none;
+}
+
+.card1:hover .navigation,
+.card2:hover .navigation,
+.card3:hover .navigation {
+    display: block;
+}
+
+.navigation ul {
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navigation ul li {
+    font-size: 0.8rem;
+    margin: 0px 10px;
+}
+
+.navigation ul li:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.bio,
+.biObiettivi,
+.bioAltri,
+.special,
+.super,
+.medie,
+.ele,
+.cert,
+.cv,
+.cinema,
+.coding,
+.sketch,
+.sport {
+    text-align: left;
+    margin: 20px 20px 0px 20px;
+    width: 620px;
+}
+
+.bio h4,
+.biObiettivi h4,
+.bioAltri h4,
+.special h4,
+.super h4,
+.medie h4,
+.ele h4,
+.cert h4,
+.cv h4,
+.cinema h4,
+.coding h4,
+.sketch h4,
+.sport h4 {
+    font-size: 2rem;
+    margin: 0px;
+    color: greenyellow;
+}
+
+p {
+    font: 1.2rem;
+}
+
+
+
+.bio img,
+.biObiettivi img,
+.bioAltri img {
+    height: 300px;
+    background-color: white;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.cinema img,
+.coding img {
+    height: 350px;
+    width: 620px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+}
+
+.sketch img {
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    width: 50%;
+}
+
+
+.logo-special,
+.logo-super,
+.logo-ProJuventute,
+.logo-CantonTicino,
+.logo-Campione,
+.logo-Lacerba,
+.logo-Almir {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.5px solid white;
+}
+
+.special img,
+.super img {
+    margin: 20px 20px 20px 0px;
+    height: 60px;
+    border-right: 0.5px solid white;
+    padding-right: 20px;
+}
+
+.logo-ProJuventute img,
+.logo-CantonTicino img,
+.logo-Campione img,
+.logo-Lacerba img,
+.logo-Almir img {
+    margin: 20px 20px 20px 0px;
+    height: 100px;
+    border-right: 0.5px solid white;
+    padding-right: 20px;
+}
+
+
+.galleria-medie,
+.galleria-ele {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5px;
+    margin-top: 12%;
+}
+
+.galleria-medie img,
+.galleria-ele img,
+.galleria-cert img,
+.galleria-cv img {
+    width: 49%;
+}
+
+.galleria-cert,
+.galleria-cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px 5px;
+    margin-top: 6%;
+}
+
+.special h3,
+.super h3,
+.medie h3,
+.ele h3,
+.cert h3,
+.cv h3 {
+    margin: 30px 0px 10px 0px;
+}
+
+.bio .contentBio,
+.biObiettivi .contentBio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bioAltri .contentBio,
+.contentHobby {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.biObiettivi,
+.bioAltri,
+.super,
+.medie,
+.ele,
+.cert,
+.cv,
+.coding,
+.sketch,
+.sport {
+    display: none;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    background-color: #333333;
+}
+
+footer div {
+    width: 1200px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.container-fma {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.Master-CSIA {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.container-pro,
+.container-art {
+    width: 50%;
+    margin: 0 2.5px;
+}
+
+
+.accordion-item {
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    background-color: #252525;
+    color: #ffffff;
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header .material-symbols-outlined {
+    margin: 0px;
+    color: white;
+}
+
+.accordion-header:hover {
+    background-color: greenyellow;
+    color: green;
+}
+
+.accordion-header:hover .material-symbols-outlined {
+    color: green;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #333333;
+    padding: 0 15px;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    font-size: 0.8rem;
+}
+
+.bottoni {
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.bottoni button {
+    height: 40px;
+    width: 200px;
+    background-color: green;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    cursor: pointer;
+}
+
+.bottoni button:hover {
+    background-color: greenyellow;
+}
+
+.bottoni button a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottoni button:hover a {
+    color: green;
+}
+
+.content {
+    width: 620px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Text ul {
+    margin-top: 20px;
+    list-style: none;
+    line-height: 25px;
+}
+
+.social {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+
+}
+
+
+.link-social {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.social svg {
+    fill: white;
+    width: 25px;
+    color: white;
+    margin-right: 10px;
+}
+
+.social .link-social:hover,
+.social svg:hover {
+    color: greenyellow;
+    fill: greenyellow;
+}
+
+.disegni {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.sport-img {
+    display: flex;
+    width: 100%;
+    gap: 0px 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sport img {
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.331);
+    width: 32%;
+}

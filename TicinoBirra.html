@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TicinoBirra.css">
+    <title>Ticino birra</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Ticino birra</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto Ticino Birra , realizzato durante il terzo anno al CSIA nelle lezioni di animazione 2D,
+                    consisteva nel creare un'animazione in After Effects in cui una bottiglia di birra entra in scena
+                    dal lato sinistro, ruota su se stessa, per poi posizionarsi al centro dello schermo mostrando il
+                    logo.
+                    La grafica della bottiglia e del logo è stata precedentemente realizzata con Illustrator .
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L'obiettivo era applicare i principi di animazione, simulando una rotazione fluida della
+                        bottiglia, e integrare grafiche vettoriali create in Illustrator all'interno di un progetto
+                        animato in After Effects .
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La principale sfida è stata ottenere un effetto realistico di rotazione della bottiglia,
+                        mantenendo coerenza visiva con il logo e assicurando che i movimenti fossero fluidi e naturali.
+                        Inoltre, implementare grafiche statiche in un contesto dinamico ha richiesto una particolare
+                        attenzione alla gestione delle trasformazioni.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p> La bottiglia è stata resa visivamente
+                        realistica attraverso la cura nei dettagli grafici in Illustrator e il perfezionamento dei
+                        movimenti fluidi in After Effects. Il risultato è un'animazione accattivante
+                        e professionale, che mette in risalto il logo della birra.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="TicinoBirra" controls>
+                    <source
+                        src="Animazioni 2D/Terzo anno/Beer_almirinnocenti/Beer_almirinnocenti_AME/beer_almirinnocenti.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

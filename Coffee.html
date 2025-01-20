@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Coffee.css">
+    <title>CoffeeShop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Coffee Shop</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    Durante il terzo anno al CSIA, ho svolto un esercizio di programmazione web che prevedeva la
+                    creazione di una pagina informativa dedicata a un articolo dell'azienda Nespresso, con la
+                    possibilità di acquisto. La pagina doveva mostrare il prodotto in dettaglio e doveva essere resa
+                    completamente responsive per garantire un’esperienza ottimale su tutti i dispositivi
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>
+                        L’obiettivo iniziale era creare una pagina responsive e visivamente accattivante per un articolo
+                        Nespresso, aggiungendo una funzionalità di acquisto. In un secondo momento, ho mirato a rendere
+                        l’interfaccia più interattiva e coinvolgente con l’uso di JavaScript, migliorando l’esperienza
+                        utente.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida è stata integrare funzionalità JavaScript per migliorare l’interattività
+                        della pagina senza compromettere il design responsivo. Inoltre, ho dovuto gestire l'animazione
+                        dell'immagine e il sistema di avviso per l’articolo non disponibile in modo che fossero
+                        intuitivi e coerenti.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato HTML, CSS e media queries per creare un layout responsive ottimizzato per tutti i
+                        dispositivi. Con JavaScript, ho aggiunto un messaggio di avviso per l’articolo non disponibile e
+                        un’animazione che ingrandisce l’immagine al clic, migliorando l’interattività della pagina.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div>
+                <article>
+                    <img src="Programmazione Web/Secondo anno/Caffe/CoffeeShop/img/caffe.jpg" alt="CoffeeShop"
+                        id="CoffeeShop">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button><a href="" download="" class="downloadButton">
+                                Scarica PDF</a></button>
+                        <button><a href="https://coffeeshopexample.netlify.app/">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+
+                <div class="galleria">
+
+                    <textarea class="code-editor-html" readonly><!DOCTYPE html>
+                        <html lang="it">
+                        
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <link rel="stylesheet" href="style.css">
+                            <title>Caffè</title>
+                        </head>
+                        
+                        <body>
+                            <id id="overlay"></id>
+                            <main>
+                                <div id="overlay"></div>
+                        
+                                <div id="imagecontenitore">
+                                    <figure><img src="img/caffe.jpg" alt="tazza_di_caffé" id="image"></figure>
+                                </div>
+                        
+                                <div class="info">
+                                    <div>
+                                        <h1>Nespresso</h1>
+                                        <h4>Volluto</h4>
+                                    </div>
+                        
+                                    <div class="pay">
+                                        5.00 <small>CHF</small>
+                                    </div>
+                        
+                                    <div class="text">
+                                        <h3>Benefici</h3>
+                        
+                                        <ul>
+                                            <li>Fa rimanere svegli</li>
+                                            <li>Fa crescere i bambini velocemente</li>
+                                        </ul>
+                                    </div>
+                        
+                                    <div><button type="submit" onclick="myPrompt()"> Aquista ora</button></div>
+                                    <div id="Messaggio"></div>
+                                </div>
+                        
+                            </main>
+                        
+                            <script>
+                                function myPrompt() {
+
+                                    // Mostra il messaggio nel div con l'id "Messaggio"
+                                    const messaggioDiv = document.getElementById('Messaggio');
+                                    messaggioDiv.innerHTML = '<p>Al momento non è disponibile questa opzione</p>';
+                                    messaggioDiv.style.display = 'block';
+                                    messaggioDiv.style.margin = 0;
+
+                                    // Imposta un timer per chiudere l'avviso e rimuovere la sfocatura
+                                    setTimeout(() => {
+                                        overlay.style.display = 'none';
+                                        messaggioDiv.style.display = 'none';
+                                    }, 3000);
+                                }
+
+                                const image = document.getElementById('image');
+                                const overlay = document.getElementById('overlay');
+
+                                image.addEventListener('click', function () {
+                                    this.classList.toggle('enlarged');
+                                    if (this.classList.contains('enlarged')) {
+                                        setTimeout(() => {
+                                            overlay.classList.add('active');
+                                            overlay.style.display = 'block';
+                                        }, 1000);
+                                    } else {
+                                        overlay.classList.remove('active');
+                                        setTimeout(() => {
+                                            overlay.style.display = 'none';
+                                        }, 1000); // Attendi la fine della transizione prima di nascondere
+                                    }
+                                });
+
+
+                            </script>
+                        </body>
+                        
+                        </html> </textarea>
+
+                    <textarea class="code-editor-css" readonly>
+                            * {
+                                box-sizing: border-box;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                            
+                            body {
+                                overflow: hidden;
+                                display: flex;
+                                justify-content: center;
+                                height: 100vh;
+                                align-items: center;
+                                background-color: #a77852;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                            
+                            main {
+                                display: flex;
+                                justify-content: space-around;
+                                width: 750px;
+                                background-color: white;
+                                padding: 20px;
+                                border-radius: 20px;
+                                box-shadow: 5px 5px 30px rgba(66, 38, 38, 0.959);
+                            }
+                            
+                            main figure {
+                                margin: 0;
+                            }
+                            
+                            h1 {
+                                font-size: xx-large;
+                            }
+                            
+                            main h4 {
+                                font-weight: lighter;
+                                color: gray;
+                                font-size: x-large;
+                                margin-top: 10px;
+                            }
+                            
+                            .info {
+                                line-height: 5px;
+                                width: 340px;
+                                height: 340px;
+                            }
+                            
+                            main .pay {
+                                color: red;
+                                text-align: center;
+                                font-size: 50px;
+                                margin: 70px 0px 20px 0px;
+                            }
+                            
+                            main .pay small {
+                                font-size: 30px;
+                            }
+                            
+                            #value {
+                                font-size: 25px;
+                                text-align: end;
+                                margin-top: -47px;
+                                padding-right: 50px;
+                            }
+                            
+                            .text {
+                                margin-top: 50px;
+                                margin-bottom: 5px;
+                            }
+                            
+                            main ul {
+                                margin: 0px;
+                                padding: 0px;
+                                list-style-type: none;
+                            }
+                            
+                            main li {
+                                line-height: 20px;
+                            }
+                            
+                            button {
+                                color: white;
+                                background-color: #c80002;
+                                text-align: center;
+                                height: 40px;
+                                width: 100%;
+                                border: 0px;
+                                margin: 15px 0px 0px 0px;
+                                transition: background-color 0.2s ease-in-out;
+                                font-size: medium;
+                                display: block;
+                            }
+                            
+                            
+                            main button:hover {
+                                cursor: pointer;
+                                cursor: hand;
+                                background-color: red;
+                            }
+                            
+                            #Messaggio {
+                                margin-top: 20px;
+                                color: red;
+                                text-align: center;
+                            }
+                            
+                            #overlay {
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(0, 0, 0, 0.5); /* Leggera trasparenza */
+                                backdrop-filter: blur(0px); /* Inizialmente senza sfocatura */
+                                transition: 1s ease-in-out; /* Transizione graduale */
+                                z-index: 0;
+                            }
+                            
+                            #overlay.active {
+                                display: block;
+                                backdrop-filter: blur(5px); /* Applica la sfocatura */
+                            }
+                            
+                            #image {
+                                cursor: pointer;
+                                height: auto;
+                                transition: 1s ease-in-out;
+                                z-index: 1;
+                            }
+                            
+                            #image.enlarged {
+                                transform: translate(50%, 3%) scale(2.3);
+                                border-radius: 10px;
+                                top: 50%;
+                                left: 50%;
+                                z-index: 2;
+                                /* Assicurati che l'immagine sia sopra l'overlay */
+                                box-shadow: 0px 0px 20px #20170f;
+                            }
+                            
+                            
+                            #imagecontenitore {
+                                margin-right: 25px;
+                            }
+                            
+                            
+                            @media (max-width: 768px) {
+                            
+                                body {
+                                    background-color: #593f2a;
+                                }
+                            
+                                main {
+                                    flex-wrap: wrap;
+                                    width: 380px;
+                                }
+                            
+                                .text {
+                                    display: none;
+                                }
+                            
+                                button {
+                                    width: 340px;
+                                }
+                            
+                                #image {
+                                    right: 0px;
+                                }
+                            
+                                #image.enlarged {
+                                    transform: translate(-50%, -50%) scale(1);
+                                    top: 50%;
+                                    left: 50%;
+                                    z-index: 1001;
+                                    box-shadow: 0px 0px 20px #20170f;
+                                }
+                            }
+                            
+                            .messaggio {
+                                margin: 0px;
+                            }
+                        </textarea>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html+è

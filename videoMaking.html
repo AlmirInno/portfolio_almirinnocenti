@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down" />
+    <link rel="stylesheet" href="videoMaking.css">
+    <title> VideoMaking</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primo carosello -->
+        <div class="carousel" id="carousel1">
+            <h1>VideoMaking </h1>
+            <div class="carousel-inner" id="carouselInner1">
+
+                <div class="card" id="card0">
+                    <a href="IlMorto.html"> <img src="FMA/Direzione della fotografia/il morto/img/il morto.png" alt="Morto"></a>
+                    <h2>Il morto</h2>
+                    <p>Scopri il progetto "Il Morto"!
+                        Un’esperienza unica in cui ho curato il suono in produzione e il montaggio con Da Vinci Resolve,
+                        perfezionando competenze tecniche essenziali nel cinema. </p>
+                </div>
+
+                <div class="card" id="card1">
+                    <a href="LaStudentessa.html"> <img
+                            src="FMA/Direzione della fotografia/La studentessa/img/La studentessa.png"
+                            alt="Studentessa"></a>
+                    <h2>La studentessa</h2>
+                    <p>
+                        Un progetto che mi ha permesso di affrontare le sfide del tracking con gimbal e affinare le mie
+                        competenze in montaggio e color correction con Da Vinci Resolve. </p>
+                </div>
+
+                <div class="card" id="card2">
+                    <a href="Moka.html"><img src="FMA/Direzione della fotografia//moka/img/moka.png" alt="LaMoka"></a>
+                    <h2>Moka</h2>
+                    <p>Un progetto di montaggio con Da Vinci Resolve, dove ho curato ogni dettaglio: dal montaggio alla
+                        color correction, fino alla scelta di suoni e musica per un risultato narrativo e visivo
+                        coinvolgente.</p>
+                </div>
+
+                <div class="card" id="card3">
+                    <a href="La video cassetta.html"><img
+                            src="FMA/Direzione della fotografia/La videocassetta/img/LaVideoCassetta.png"
+                            alt="FMA_videocassetta"></a>
+                    <h2>La video cassetta</h2>
+                    <p>Scopri il video che ho contribuito a creare come cameraman e editor! Un
+                        progetto che combina inquadrature, audio e luci di qualità e un’accurata post-produzione per un
+                        risultato professionale. </p>
+                </div>
+
+
+                <div class="card" id="card4">
+                    <a href="Airbnb.html"><img src="Video making/Winter is coming/img/Winteriscoming.png"
+                            alt="Winter is coming"></a>
+                    <h2>Winter is coming</h2>
+                    <p>Esplora "Winter is Coming", il video che ho creato per promuovere località Airbnb! Scopri
+                        paesaggi invernali mozzafiato, una produzione curata nei dettagli e un’esperienza visiva
+                        immersiva.</p>
+                </div>
+
+
+                <div class="card" id="card5">
+                    <a href="Rem.html"> <img src="Video making/VIDEOCLIP/image/Cantare.png" alt="Rem"></a>
+                    <h2>Rem</h2>
+                    <p>Esplora il montaggio video che ho creato per il brano "REM"! Preparati a scoprire un video
+                        musicale che fonde musica e immagini in un'esperienza visiva dinamica.</p>
+                </div>
+
+
+                <div class="card" id="card6">
+                    <a href="NAKED.html"> <img src="Video making/NAKED_almirinnocenti/Progetto d'esame/layout.png"
+                            alt="NAKED"></a>
+                    <h2>NAKED</h2>
+                    <p>Esplora il progetto "NAKED" che ho creato per l’esame di Creazione Cultura e Arte! Preparati a
+                        immergerti in un’esperienza emotiva unica, esplorando le sfumature delle emozioni umane.</p>
+                </div>
+
+            </div>
+
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(1)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        // Inizializza l'indice corrente del carosello a 0 (la prima card)
+        let currentIndex = 0;
+
+        // Numero di card da mostrare contemporaneamente
+        const cardsToShow = 3;
+
+        // Larghezza della card (compreso margine)
+        const cardWidth = 395; // Imposta la larghezza effettiva delle card
+        const margin = 5; // Margine delle card
+
+        // Recupera i pulsanti per disabilitarli quando necessario
+        const prevButton = document.querySelector('.button-left');
+        const nextButton = document.querySelector('.button-right');
+
+        // Funzione per aggiornare la posizione delle card nel carosello
+        function updateCarousel() {
+            const carouselInner = document.getElementById('carouselInner1'); // Usa l'ID corretto
+            const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+            // Calcola l'offset orizzontale da applicare al carosello
+            const offset = -currentIndex * (cardWidth + margin);
+
+            // Limita il movimento in modo che il carosello non vada oltre le ultime carte
+            const maxOffset = -((totalCards - cardsToShow) * (cardWidth + margin));
+            carouselInner.style.transform = `translateX(${Math.max(offset, maxOffset)}px)`;
+
+            // Disabilita i pulsanti se necessario
+            prevButton.disabled = currentIndex <= 0;
+            nextButton.disabled = currentIndex >= totalCards - cardsToShow;
+        }
+
+        // Funzione per passare alla card successiva nel carosello
+        function nextSlide() {
+            const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+            // Incrementa l'indice corrente per passare alla card successiva
+            currentIndex = Math.min(currentIndex + 1, totalCards - cardsToShow);
+            updateCarousel();
+        }
+
+        // Funzione per tornare alla card precedente nel carosello
+        function prevSlide() {
+            // Decrementa l'indice corrente per tornare alla card precedente
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateCarousel();
+        }
+
+        // Inizializza il carosello disabilitando i pulsanti se necessario
+        updateCarousel();
+
+    </script>
+</body>
+
+
+
+</html>

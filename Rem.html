@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Rem.css">
+    <title>Rem</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Rem</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Nel secondo anno al CSIA, durante le lezioni di ripresa digitale, ho realizzato un montaggio video
+                    personale del brano "REM". Il progetto consisteva nell'assemblare testi, musica e video forniti,
+                    creando un video musicale che riflettesse l’essenza della canzone attraverso un montaggio creativo e
+                    personale.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L’obiettivo era creare un montaggio video coinvolgente che rispecchiasse le emozioni e il
+                        messaggio della canzone, utilizzando le tecniche di montaggio apprese durante il corso. Ho
+                        cercato di combinare musica, testi e immagini in modo fluido, rendendo il video visivamente
+                        dinamico e coerente con il tema del brano.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata quella di adattare i materiali forniti alla mia visione creativa,
+                        mantenendo un equilibrio tra musica e video per creare un flusso narrativo coerente.
+                        Inoltre, ho dovuto lavorare sull'editing per ottenere un effetto visivo che
+                        enfatizzasse l'atmosfera della canzone.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato software di editing video Premiere Pro per tagliare, unire e sincronizzare i vari
+                        elementi,
+                        combinando musica e video in modo armonioso. Ho lavorato per garantire che il video fosse fluido
+                        e coinvolgente, creando un prodotto
+                        finale che riflettesse il mio stile personale.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+            <div>
+                <div class="galleria">
+                    <video id="Rem-video" controls>
+                        <source src="Video making/VIDEOCLIP/Rem Definitivo(Web4).mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="QuickStep.css">
+    <title>QuickStep</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>QuickStep</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Quickstep", realizzato durante il primo anno al CSIA nelle lezioni di Animazione 2D,
+                    prevedeva la creazione di un logo animato sincronizzato con una base musicale. Ho ideato
+                    un'animazione dinamica che include un omino stilizzato che balla all'interno di un quadrato,
+                    integrato nel logo Quickstep. Lo sfondo giallo animato contribuisce a dare energia e vitalità al
+                    progetto. Il font del logo è stato fornito come elemento di base.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Sperimentare l'animazione dei movimenti a ritmo di musica e integrare grafiche statiche in una
+                        composizione animata per ottenere un risultato vivace e accattivante.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Coordinare i movimenti dell'omino stilizzato con il tempo della musica, mantenendo coerenza
+                        visiva e bilanciando gli elementi grafici del logo con lo sfondo.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Utilizzando After Effects, ho animato le varie componenti del logo, prestando particolare
+                        attenzione alla fluidità dei movimenti dell'omino e alle transizioni tra gli elementi grafici.
+                        Lo sfondo giallo animato è stato progettato per armonizzarsi con il logo e sottolineare
+                        l'energia del progetto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="QuickStep" controls>
+                    <source src="Animazioni 2D/Primo anno/Quickstep/Quickstep_Master.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

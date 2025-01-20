@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webDesign.css">
+    <title>Web Design</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Web Design</h1>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner1">
+                <div class="card" id="card1">
+                    <a href="Demeter.html">
+                        <img src="Web design/Adobe XD/Demeter Foundation/Immagini progetti/BANGLADESH.jpg"
+                            alt="Demeter Foundation" id="img1"></a>
+                    <h2>Demeter Foundation</h2>
+                    <p>Esplora il sito web in inglese che ho progettato per "Demeter Foundation". Preparati a
+                        intraprendere un viaggio emozionante nel mondo della sostenibilità e dell'innovazione!</p>
+                </div>
+                <div class="card" id="card2">
+                    <a href="LeCittàInvisibili.html">
+                        <img src="Web design/Adobe XD/Le città invisibili/PDI/img/Inizio.png" alt="Le città invisibili"
+                            id="img2">
+                    </a>
+                    <h2>Le città invisibili</h2>
+                    <p>Esplora il progetto web che ho realizzato su "Le città invisibili" di Italo Calvino.
+                        Un viaggio affascinante tra le visioni immaginarie dell’autore ti aspetta!</p>
+                </div>
+                <div class="card" id="card3">
+                    <a href="Marchesi.html">
+                        <img src="Web design/Adobe XD/Marchesi website/Sito web_Marchesi/Marchesi/Immagini corporate/MG_9949-1024x683.jpg"
+                            alt="Marchesi">
+                    </a>
+                    <h2>Marchesi</h2>
+                    <p>Scopri il sito web che ho creato per la panetteria-pasticceria "Marchesi". Un'esperienza unica
+                        tra tradizione, dolci artigianali e sapori autentici ti aspetta!</p>
+                </div>
+                <div class="card" id="card4">
+                    <a href="Cardellino.html"><img src="Web design/Adobe XD/Residenza Cardellino/image/8493_01_Ligornetto_F2.png" alt=""></a>
+                    <h2>Residenza Cardellino</h2>
+                    <p>Visita il sito web che ho progettato per la "Residenza Cardellino". Scopri un luogo dove
+                        comfort e natura si uniscono per offrirti un'esperienza indimenticabile!</p>
+                </div>
+                <div class="card" id="card5">
+                    <a href="Didot.html"><img src="Web design/Adobe XD/Il font Didot/image/Didot_header_vertical_.jpg"
+                            alt="Didot"></a>
+                    <h2>Il font Didot</h2>
+                    <p>Esplora il sito web che ho creato per il font 'Didot'. Scopri l’eleganza e la versatilità di un
+                        carattere iconico, perfetto per molti progetti di design e tipografia</p>
+                </div>
+                <div class="card" id="card6">
+                    <a href="Watty.html"> <img src="Web design/Adobe XD/Watty app/image/watty logo orizzontal.jpg"
+                            alt="Watty"></a>
+                    <h2>Watty app</h2>
+                    <p>Scopri "Watty", l'app di e-bike che ho progettato per il mio esame finale di Interactive Media
+                        Designer. Con questa app, ogni viaggio diventa più intelligente e sostenibile!</p>
+                </div>
+                <div class="card" id="card7">
+                    <a href="Lumen.html"><img
+                            src="Web design/Adobe XD/Lumen app/Settimana gialla1/Img/LUMEN_Logo_white3.png" alt=""></a>
+                    <h2>Lumen app</h2>
+                    <p>Scopri "Lumen", l'app che ho progettato per il controllo delle luci di casa. Gestisci
+                        l'illuminazione in modo semplice e intelligente per creare l'atmosfera perfetta!</p>
+                </div>
+                <div class="card" id="card8">
+                    <a href="HarvestingHope.html"> <img
+                            src="Web design/Adobe XD/Harvesting Hope/settimana gialla 3 (preesame)/logo HH_orizzontale.jpg" alt="HarvestingHope"></a>
+                        
+                        <h2>Harvesting Hope</h2>
+                        <p>Scopri il sito web che ho creato per "Harvesting Hope". Un progetto dedicato a ispirare e
+                            promuovere la sostenibilità attraverso l'agricoltura e il supporto alle comunità!</p>
+                </div>
+
+            </div>
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(1)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        // Inizializza l'indice corrente del carosello a 0 (la prima card)
+let currentIndex = 0;
+
+// Numero di card da mostrare contemporaneamente
+const cardsToShow = 3;
+
+// Larghezza della card (compreso margine)
+const cardWidth = 395; // Imposta la larghezza effettiva delle card
+const margin = 5; // Margine delle card
+
+// Recupera i pulsanti per disabilitarli quando necessario
+const prevButton = document.querySelector('.button-left');
+const nextButton = document.querySelector('.button-right');
+
+// Funzione per aggiornare la posizione delle card nel carosello
+function updateCarousel() {
+    const carouselInner = document.getElementById('carouselInner1'); // Usa l'ID corretto
+    const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+    // Calcola l'offset orizzontale da applicare al carosello
+    const offset = -currentIndex * (cardWidth + margin);
+
+    // Limita il movimento in modo che il carosello non vada oltre le ultime carte
+    const maxOffset = -((totalCards - cardsToShow) * (cardWidth + margin));
+    carouselInner.style.transform = `translateX(${Math.max(offset, maxOffset)}px)`;
+
+    // Disabilita i pulsanti se necessario
+    prevButton.disabled = currentIndex <= 0;
+    nextButton.disabled = currentIndex >= totalCards - cardsToShow;
+}
+
+// Funzione per passare alla card successiva nel carosello
+function nextSlide() {
+    const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+    // Incrementa l'indice corrente per passare alla card successiva
+    currentIndex = Math.min(currentIndex + 1, totalCards - cardsToShow);
+    updateCarousel();
+}
+
+// Funzione per tornare alla card precedente nel carosello
+function prevSlide() {
+    // Decrementa l'indice corrente per tornare alla card precedente
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateCarousel();
+}
+
+// Inizializza il carosello disabilitando i pulsanti se necessario
+updateCarousel();
+
+    </script> <!-- Link al JavaScript -->
+</body>
+
+</html>

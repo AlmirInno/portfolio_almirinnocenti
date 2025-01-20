@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PaolaLenti.css">
+    <title>Paola Lenti</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Paola Lenti</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Paola Lenti" , sviluppato durante il secondo anno al CSIA nelle lezioni di animazione
+                    2D, consisteva nella creazione di un'animazione per promuovere l'azienda tessile Paola Lenti ,
+                    specializzata nell'arredo casa. L'animazione combinava fotografie con transizioni fluide e
+                    elementi grafici geometrici (quadrati di vari colori), accompagnati da testi, per creare un'estetica
+                    moderna e minimale.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Realizzare un video promozionale elegante e minimale, integrando grafica vettoriale e fotografie
+                        per enfatizzare il design sofisticato e innovativo dei prodotti dell'azienda.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata lavorare sui livelli e le animazioni delle assi in After Effects ,
+                        creando una combinazione armoniosa tra i movimenti grafici e le fotografie senza sovraccaricare
+                        la composizione visiva.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Con After Effects, ho progettato una animazione che alterna transizioni fluide e
+                        movimenti grafici lungo gli assi X e Y. I quadrati colorati, si
+                        animano in armonia con i testi descrittivi, creando un'estetica moderna e minimale.
+                        L'approccio ha permesso di esaltare i prodotti Paola Lenti, garantendo una comunicazione visiva
+                        efficace e raffinata.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="PaolaLenti" controls>
+                    <source src="Animazioni 2D/Secondo anno/PaolaLenti/Master_PaolaLenti.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

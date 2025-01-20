@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sneakers.css">
+    <title>Sneakers</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introduzione">
+            <div class="title">
+                <h1>Sneakers</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto "Sneakers" , sviluppato durante il terzo anno al CSIA nelle lezioni di animazione 2D,
+                    consisteva nella creazione di un'animazione interattiva in Adobe XD per valorizzare una
+                    di scarpa sportiva. L'animazione si attiva al passaggio del mouse, applicando un effetto scala per
+                    dare risalto ai prodotti e creare un'esperienza visivamente accattivante.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Progettare un'animazione che mette in evidenza i dettagli di ciascun prodotto attraverso un
+                        effetto scala intuitivo e reattivo al movimento del cursore.
+
+
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata creare un effetto scala che fosse fluido, coerente con il design e
+                        capace di enfatizzare i prodotti senza risultare invasivo o eccessivo. È stato necessario un
+                        lavoro dettagliato sull'interazione per garantire un'esperienza utente fluida e piacevole.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho realizzato l'animazione in Adobe XD, impostando il trigger basato sul passaggio del mouse per
+                        attivare l'effetto scala. Ogni prodotto viene messo così in evidenza in modo dinamico,
+                        garantendo un'interazione fluida e coinvolgente. Questo approccio ha permesso di valorizzare il
+                        design dei prodotti, migliorando l'appeal visivo e l'interattività dell'esperienza complessiva.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+
+            <div>
+                <article>
+                    <img src="Animazioni 2D/Terzo anno/Sneakers/img/Sneakers.png" alt="Sneakers" id="Sneakers">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button class="downloadButton"><a href="" download="">
+                                Scarica PDF</a></button>
+                        <button><a
+                                href="https://xd.adobe.com/view/c4045605-6e72-4bc2-aaa5-ae387c38f5c0-9157/?fullscreen">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+                <div class="galleria">
+                    <img id="Scarpa" src="Animazioni 2D/Terzo anno/Sneakers/img/Scarpa.png" alt="Scarpa">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down" />
+    <link rel="stylesheet" href="animazioni3D.css">
+    <title>Animazioni 3D</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primo carosello -->
+        <div class="carousel" id="carousel1">
+            <h1>animazioni 3D </h1>
+            <div class="carousel-inner" id="carouselInner1">
+
+                <div class="card" id="card1">
+                    <a href="Lavatrice.html"><img src="Animazioni 3D/La lavatrice/img/La lavatrice.png"
+                            alt="LaLavatrice"></a>
+                    <h2>La lavatrice</h2>
+                    <p>Scopri la lavasciuga "SmartWash" progettata per unire accessibilità, design ergonomico e
+                        tecnologia avanzata in un'animazione 3D unica.</p>
+                </div>
+
+                <div class="card" id="card2">
+                    <a href="" class="downloadButton"> <img src="Animazioni 3D/DeLorean/Delorean definitivo/img/DeLorean_vertical_long.jpg"
+                            alt="DeLorean"></a>
+                    <h2>DeLorean</h2>
+                    <p>Guarda la mia animazione 3D per un progetto di tracking 3D: una Delorean che prende vita e
+                        vola via dalla stazione di Lugano!
+                    </p>
+                </div>
+
+
+                <div class="card" id="card3">
+                    <a href="Jack.html"> <img src="Animazioni 3D/Jack/img/Jack.png" alt="Jack"></a>
+                    <h2>Jack</h2>
+                    <p>Scopri l'animazione 3D della Magic Box: un diavolo sorprendente che emerge dalla scatola e viene
+                        fulminato! </p>
+                </div>
+
+
+                <div class="card" id="card4">
+                    <a href="Worm.html"> <img src="Animazioni 3D/Worm_scene/img/Worm.png" alt="Worm"></a>
+                    <h2>Worm</h2>
+                    <p>Guarda l'animazione 3D di un verme strisciante, realizzato con Cinema 4D e After Effects e con
+                        effetti di messa a fuoco e luci ambientali!
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="bottoni .up">
+                <button class="button button-left" onclick="prevSlide(1)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="RollDown" style="color: white;">
+                <p>Scorri verso il basso</p>
+                <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                </span>
+            </div>
+        </div>
+
+        <!-- Secondo carosello -->
+        <div class="carousel" id="carousel2">
+            <div class="carousel-inner2" id="carouselInner2">
+
+                <div class="card" id="card5">
+                    <a href="La Griglia.html"> <img src="Animazioni 3D/La_Griglia_Logo//img/LaGriglia_vertical_long.jpg"
+                            alt="LaGriglia"></a>
+                    <h2>La griglia</h2>
+                    <p>Esplora l'animazione 3D: una scritta fiammeggiante che evoca l'atmosfera di un barbecue!
+
+                    </p>
+                </div>
+
+                <div class="card" id="card6">
+                    <a href="CineClub.html"> <img src="Animazioni 3D/CineClub/img/Cineclub.png" alt="CineClub"></a>
+                    <h2>Cineclub</h2>
+                    <p> Un'esperienza 3D distopica e interattiva che cattura l'attenzione
+                        degli spettatori. </p>
+                </div>
+
+                <div class="card" id="card7">
+                    <a href="Track 3D.html"> <img src="Animazioni 3D/Tracker/img/Tracker3D.png" alt="Tracker3D"></a>
+                    <h2>Tracker 3D</h2>
+                    <p>Scopri il mio primo progetto di tracking 3D: <br> una macchina 3D per le strade di New
+                        York!
+
+                    </p>
+                </div>
+
+                <div class="card" id="card8">
+                    <a href="Planimetrie.html"> <img src="Animazioni 3D/planimetrie/img/Planimetrie_vertical_long.jpg"
+                            alt="Planimetria"></a>
+                    <h2>Planimetria</h2>
+                    <p>Esplora la planimetria 3D animata per il sito della Residenza Cardellino! </p>
+                </div>
+            </div>
+
+            <div class="bottoni" id="down">
+                <button class="button button-left" onclick="prevSlide(2)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(2)">&#10095;</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        const cardsToShow = 3; // Numero di card da mostrare
+        const cardWidth = 395; // Altezza di ogni card
+        const margin = 10; // Margine tra le card
+
+        let currentIndex1 = 0;
+        let currentIndex2 = 0;
+
+        function updateCarousel(carouselNumber) {
+            let carouselInner;
+            let currentIndex;
+            let totalCards;
+
+            if (carouselNumber === 1) {
+                carouselInner = document.getElementById('carouselInner1');
+                currentIndex = currentIndex1;
+                totalCards = document.querySelectorAll('#carouselInner1 .card').length;
+
+            } else if (carouselNumber === 2) {
+                carouselInner = document.getElementById('carouselInner2');
+                currentIndex = currentIndex2;
+                totalCards = document.querySelectorAll('#carouselInner2 .card').length;
+            }
+
+            // Calcolo dell'offset per centrare esattamente 3 card
+            let offset = -(cardWidth + margin) * currentIndex;
+            carouselInner.style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextSlide(carouselNumber) {
+            if (carouselNumber === 1) {
+                // Permetti il ciclo completo, ma mostrando 3 card per volta
+                currentIndex1 = Math.min(
+                    currentIndex1 + 1,
+                    document.querySelectorAll('#carouselInner1 .card').length - cardsToShow
+                );
+                updateCarousel(1);
+
+            } else if (carouselNumber === 2) {
+                // Permetti il ciclo completo, ma mostrando 3 card per volta
+                currentIndex2 = Math.min(
+                    currentIndex2 + 1,
+                    document.querySelectorAll('#carouselInner2 .card').length - cardsToShow
+                );
+                updateCarousel(2);
+            }
+        }
+
+        function prevSlide(carouselNumber) {
+            if (carouselNumber === 1) {
+                currentIndex1 = Math.max(currentIndex1 - 1, 0); // Evita di andare oltre l'inizio
+                updateCarousel(1);
+
+            } else if (carouselNumber === 2) {
+                currentIndex2 = Math.max(currentIndex2 - 1, 0); // Evita di andare oltre l'inizio
+                updateCarousel(2);
+            }
+        }
+
+        // Esempio di gestione lampeggio elemento "RollDown"
+        const flickeringElements = document.querySelectorAll('.RollDown');
+        setInterval(() => {
+            flickeringElements.forEach((element) => {
+                element.style.opacity = element.style.opacity === '1' ? '0.5' : '1';
+            });
+        }, 1000);
+
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+    </script>
+</body>
+
+
+
+</html>

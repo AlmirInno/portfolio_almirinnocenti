@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Challange.css">
+    <title>Challange</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA
+                        ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Challange</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Durante il quarto anno al CSIA, nelle lezioni di animazione 2D, ho partecipato a una sfida tra
+                    compagni di corso, richiesta da un committente esterno. L’obiettivo era realizzare un’animazione di
+                    un treno, lasciando spazio alla creatività individuale.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Creare un’animazione che rappresentasse in modo realistico ed esteticamente piacevole il treno
+                        FFS, sfruttando le tecniche apprese per impressionare il committente e distinguermi tra i
+                        partecipanti.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>Trasformare un concetto semplice come il movimento di un treno in un’animazione coinvolgente e
+                        tecnicamente impeccabile. Dovevo trasmettere realismo e dinamismo, rispettando i dettagli
+                        estetici delle FFS.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho progettato l’animazione con After Effects, curando il movimento fluido del treno sui binari,
+                        con una particolare attenzione alle proporzioni e al design realistico del mezzo. Ho integrato
+                        uno sfondo rappresentativo, per migliorare l’atmosfera visiva e catturare l’attenzione del
+                        committente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+            <div class="galleria">
+                <video id="Challange" controls>
+                    <source src="Animazioni 2D/Quarto anno/Challange/trenochallange.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

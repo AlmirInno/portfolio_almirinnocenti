@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="progetti.css">
+    <title>I miei lavori</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>I miei lavori</h1>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                <div class="card" id="card1">
+                    <a href="webDesign.html"> <img src="image/ux-787968_1280.jpg" alt="WebDesign"></a>
+                    <h2>WEB DESIGN</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Web Design", dove creatività e
+                        funzionalità si uniscono.
+                        Ogni lavoro è realizzato con cura, trasformando idee in esperienze digitali su misura.</p>
+                </div>
+                <div class="card" id="card2">
+                    <a href="programmazioneWeb.html"> <img src="image/engineer-4904884_1280.jpg"
+                            alt="ProgrammazioneWeb"></a>
+                    <h2>PROGRAMMAZIONE WEB</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Programmazione Web", dove applico le
+                        nozioni di coding.
+                        Ogni soluzione è sviluppata con attenzione, garantendo performance e funzionalità ottimali.</p>
+                </div>
+                <div class="card" id="card3">
+                    <a href="videoMaking.html"> <img src="image/chromakey-2698664_1280.jpg" alt="VideoMaking"></a>
+                    <h2>VIDEO MAKING</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Video Making", dove narrazione visiva e
+                        creatività si fondono.
+                        Ogni video è realizzato con cura, trasmettendo emozioni e messaggi in modo coinvolgente.</p>
+                </div>
+                <div class="card" id="card4">
+                    <a href="animazioni2D.html"> <img src="image/video-conference-5609682_1280.png"
+                            alt="Animazioni2D"></a>
+                    <h2>ANIMAZIONI 2D</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Animazioni 2D", dove la creatività si
+                        anima con ogni movimento.
+                        Ogni lavoro è realizzato con passione, offrendo esperienze visive uniche.</p>
+                </div>
+                <div class="card" id="card5">
+                    <a href="animazioni3D.html"> <img src="image/3D animation.webp" alt="Animazioni3D"></a>
+                    <h2>ANIMAZIONI 3D</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Animazioni 3D", dove la realtà si fonde
+                        con l'immaginazione.
+                        Ogni creazione è realizzata con precisione, offrendo esperienze visive immersive e coinvolgenti.
+                    </p>
+                </div>
+                <div class="card" id="card6">
+                    <a href="soundDesign.html"> <img src="image/microphone-5046876_1280.jpg" alt="SoundDesign"></a>
+                    <h2>SOUND DESIGN</h2>
+                    <p>All'interno di questa card troverai i miei progetti di "Sound Design", dove il suono diventa
+                        emozione.
+                        Ogni traccia è curata con attenzione, creando atmosfere uniche e coinvolgenti.</p>
+                </div>
+                <div class="card" id="card7">
+                    <a href="lacerbaIO.html"> <img src="image/Logo_Lacerba_scritta_verde_payoff.png"
+                            alt="LacerbaIo"></a>
+                    <h2>LACERBA.IO</h2>
+                    <p>All'interno di questa card troverai alcuni progetti con "Lacerba.io", la scuola di tecnologie
+                        digitali online.
+                        Qui ho affinato le mie conoscenze di JavaScript, approfondendo tecniche e best practices.</p>
+                </div>
+            </div>
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide()">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+// Inizializza l'indice corrente del carosello a 0 (la prima card)
+let currentIndex = 0;
+
+// Numero di card da mostrare contemporaneamente
+const cardsToShow = 6;
+
+// Larghezza della card (compreso margine)
+const cardWidth = 600; // Imposta la larghezza effettiva delle card
+const margin = 5; // Margine delle card
+
+// Recupera i pulsanti per disabilitarli quando necessario
+const prevButton = document.querySelector('.button-left');
+const nextButton = document.querySelector('.button-right');
+
+// Funzione per aggiornare la posizione delle card nel carosello
+function updateCarousel() {
+    const carouselInner = document.getElementById('carouselInner');
+    const totalCards = document.querySelectorAll('.card').length;
+
+    // Calcola l'offset orizzontale da applicare al carosello
+    const offset = -currentIndex * (cardWidth + margin * 1); // Sposta di una card alla volta
+
+    // Limita il movimento in modo che il carosello non vada oltre le ultime carte
+    const maxOffset = -((totalCards - cardsToShow) * (cardWidth + margin * 1));
+    carouselInner.style.transform = `translateX(${Math.max(offset, maxOffset)}px)`;
+
+    // Disabilita il pulsante "avanti" se siamo sull'ultima card
+    if (currentIndex >= totalCards - cardsToShow) {
+        nextButton.disabled = true;
+    } else {
+        nextButton.disabled = false;
+    }
+
+    // Disabilita il pulsante "indietro" se siamo sulla prima card
+    if (currentIndex <= 0) {
+        prevButton.disabled = true;
+    } else {
+        prevButton.disabled = false;
+    }
+}
+
+// Funzione per passare alla card successiva nel carosello
+function nextSlide() {
+    const totalCards = document.querySelectorAll('.card').length;
+
+    // Incrementa l'indice corrente per passare alla card successiva
+    currentIndex += 1; // Scorri di una card
+
+    // Se l'indice corrente supera il numero totale di card meno quelle visibili, ferma lo scorrimento
+    if (currentIndex > totalCards - cardsToShow) {
+        currentIndex = totalCards - cardsToShow;
+    }
+
+    // Chiama la funzione per aggiornare la posizione del carosello
+    updateCarousel();
+}
+
+// Funzione per tornare alla card precedente nel carosello
+function prevSlide() {
+    // Decrementa l'indice corrente per tornare alla card precedente
+    currentIndex -= 1; // Scorri indietro di una card
+
+    // Se l'indice corrente è minore di 0, fermalo a 0
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    }
+
+    // Chiama la funzione per aggiornare la posizione del carosello
+    updateCarousel();
+}
+
+// Inizializza il carosello disabilitando i pulsanti se necessario
+updateCarousel();
+
+
+    </script> <!-- Link al JavaScript -->
+</body>
+
+</html>

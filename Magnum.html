@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Magnum.css">
+    <title>Magnum</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introduzione">
+            <div class="title">
+                <h1>Magnum</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto Magnum, realizzato durante il terzo anno al CSIA nelle lezioni di animazione 2D,
+                    consisteva nel progettare una landing page per il brand Magnum. La pagina utilizza effetti di
+                    parallasse per animare la presentazione dei vari prodotti, creando un'esperienza visiva moderna e
+                    coinvolgente. Il design e le animazioni sono stati sviluppati utilizzando Adobe XD .
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L'obiettivo era creare una landing page esteticamente accattivante e interattiva, in grado di
+                        valorizzare i prodotti Magnum attraverso animazioni fluide e una navigazione dinamica basata
+                        sull'effetto parallasse.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida principale è stata il parallax in un prototipo sviluppato interamente in Adobe XD , un
+                        software che limita la possibilità di simulare animazioni implementate complesse. Inoltre,
+                        garantire che la pagina fosse visivamente accattivante e intuitiva da navigare ha richiesto una
+                        particolare attenzione al layout e al ritmo delle animazioni.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho progettato una struttura della landing page che mette in evidenza i prodotti Magnum in sezioni
+                        animate, con un effetto parallasse al click dei bottoni di navigazione. 
+                        Per superare i limiti tecnici di Adobe XD, ho simulato il parallax combinando
+                        transizioni dinamiche e interazioni fluide tra le sezioni.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+            <div>
+                <article>
+                    <img src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_long.jpg" id="Magnum">
+                    <h3>DETTAGLI</h3>
+                    <p>Per approfondire il progetto, ti invito a scaricare il Dossier, che offre una
+                        panoramica dettagliata delle scelte progettuali e delle funzionalità del sito. Inoltre, puoi
+                        dare
+                        un'occhiata al prototipo del sito per esplorare l'interfaccia e l'esperienza utente che ho
+                        progettato.</p>
+
+                    <div class="bottoni">
+                        <button class="downloadButton"><a href="" download="">
+                                Scarica PDF</a></button>
+                        <button><a
+                                href="https://xd.adobe.com/view/8ac7fcd5-f7e2-4bf3-85e6-d93a91661582-df94/?fullscreen">
+                                Visita il sito</a></button>
+                    </div>
+                </article>
+
+                <div class="galleria">
+                    <img id="Purgatorio" src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_purgatorio_q.jpg"
+                        alt="Purgatorio">
+                    <img id="Lampone" src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_lampone_q.jpg" alt="Lampone">
+                    <img id="Classico" src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_classico_q.jpg" alt="Classico">
+                    <img id="Bianco" src="Animazioni 2D/Terzo anno/Magnum/img/Magnum_bianco_q.jpg" alt="Bianco">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_up" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+
+        <div class="introduzione">
+            <div class="intestazione">
+                <div class="boxTesti">
+                    <h2>CIAO A TUTTI!</h2>
+                    <h1>SONO <b class="nome">ALMIR INNOCENTI</b></h1>
+                    <p class="professione">INTERACTIVE MEDIA DESIGNER/ VIDEOMAKER</p>
+                    <p class="descrizione">
+                        Benvenuti sul mio portfolio, uno spazio interamente programmato da me per condividere la mia
+                        passione e il mio lavoro. Qui potrete scoprire progetti, idee e competenze che definiscono il
+                        mio percorso professionale. Esplorate le sezioni per conoscere il mio approccio, la mia
+                        creatività e le soluzioni che ho sviluppato. Buona navigazione!
+                    </p>
+                    <button type="button" class="comincia" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button>
+                </div>
+            </div>
+
+            <div class="image">
+                <figure>
+                    <img src="image/Foto cv.png" alt="Foto profilo">
+                </figure>
+            </div>
+
+            <div class="miniature">
+                <span class="material-symbols-outlined" id="scrollUp">
+                    keyboard_arrow_up
+                </span>
+
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <article class="card1">
+                            <img src="image/engineer-4904884_1280.jpg" alt="ProgrammazioneWeb">
+                            <a href="programmazioneWeb.html">Programmazione web</a>
+                        </article>
+                        <article class="card2">
+                            <img src="image/ux-787968_1280.jpg" alt="WebDesign">
+                            <a href="webDesign.html"> Web design</a>
+                        </article>
+                        <article class="card3">
+                            <img src="image/chromakey-2698664_1280.jpg" alt="VideoMaking">
+                            <a href="videoMaking.html">Video making</a>
+                        </article>
+                        <article class="card4">
+                            <img src="image/video-conference-5609682_1280.png" alt="Animazioni2D">
+                            <a href="animazioni2D.html">Animazioni 2D</a>
+                        </article>
+                        <article class="card5">
+                            <img src="image/3D animation.webp" alt="Animazioni3D">
+                            <a href="animazioni3D.html">Animazioni 3D</a>
+                        </article>
+                        <article class="card6">
+                            <img src="image/microphone-5046876_1280.jpg" alt="SoundDesign">
+                            <a href="soundDesign.html">Sound Design</a>
+                        </article>
+                        <article class="card7">
+                            <img src="image/Logo_Lacerba_scritta_verde_payoff.png" alt="LacerbaIo">
+                            <a href="lacerbaIO.html">Lacerba.io</a>
+                        </article>
+                    </div>
+                </div>
+
+                <span class="material-symbols-outlined" id="scrollDown">
+                    keyboard_arrow_up
+                </span>
+
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const upArrow = document.getElementById('scrollUp');
+        const downArrow = document.getElementById('scrollDown');
+        const articles = Array.from(document.querySelectorAll('.carousel article'));
+        const articleHeight = 280; // Altezza di un articolo più margine
+        const visibleCount = 3; // Numero di articoli visibili alla volta
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const offset = currentIndex * articleHeight;
+            carouselInner.style.transform = `translateY(-${offset}px)`;
+        }
+
+        upArrow.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        downArrow.addEventListener('click', () => {
+            if (currentIndex < articles.length - visibleCount) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+    </script>
+</body>
+
+</html>

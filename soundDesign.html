@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down" />
+    <link rel="stylesheet" href="soundDesign.css">
+    <title> Sound Design</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primo carosello -->
+        <div class="carousel" id="carousel1">
+            <h1>Sound Design </h1>
+            <div class="carousel-inner" id="carouselInner1">
+
+                <div class="card" id="card1">
+                    <a href="TheImpossible.html"><img src="Sound Design/Tsunami/img/Tsunami.png"
+                            alt="TheImpossible"></a>
+                    <h2>The impossible</h2>
+                    <p>Scopri "The Impossible", un esercizio di sound design in cui ho ricreato una scena del film con
+                        suoni realistici utilizzando Adobe Audition.</p>
+                </div>
+
+
+                <div class="card" id="card2">
+                    <a href="Revenant.html"><img src="Sound Design/Revenant/Img/Revenant.png" alt="Revenant"></a>
+                    <h2>Revenant</h2>
+                    <p>Esplora "The Revenant", un esercizio di sound design in cui ho ricreato una scena iconica del
+                        film
+                        con suoni realistici utilizzando Adobe Audition. </p>
+                </div>
+
+
+                <!-- <div class="card" id="card3">
+                    <a href=""> <img
+                            src=""
+                            alt="Helicopter"></a>
+                    <h2>Helicopter</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, eos aliquam! Aperiam
+                        commodi quam quos provident voluptatibus. Corrupti eaque totam soluta esse tenetur! </p>
+                </div> -->
+
+
+                <div class="card" id="card4">
+                    <a href="StarWars.html"> <img src="Sound Design/StarWars_almirinnocenti/img/Starwars.png"
+                            alt="Star Wars"></a>
+                    <h2>Star Wars</h2>
+                    <p>Un progetto di sound design in cui ho ricreato una scena di
+                        combattimento spaziale selezionando e modificando i suoni da una libreria fornita.</p>
+                </div>
+
+
+                <div class="card" id="card5">
+                    <a href="Chaplin.html"> <img src="Sound Design/chaplin_almirinnocenti/img/CharlieChaplin.png"
+                            alt="Charlie Chaplin"></a>
+                    <h2>Charlie Chaplin</h2>
+                    <p>Il mio primo progetto di sound design, in cui ho registrato e
+                        integrato suoni per ricreare la scena in cui i protagonisti mangiano una ciabatta</p>
+                </div>
+
+            </div>
+
+            <div class="bottoni">
+                <button class="button button-left" onclick="prevSlide(1)">&#10094;</button>
+                <button class="button button-right" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+    <script>
+        // Inizializza l'indice corrente del carosello a 0 (la prima card)
+        let currentIndex = 0;
+
+        // Numero di card da mostrare contemporaneamente
+        const cardsToShow = 3;
+
+        // Larghezza della card (compreso margine)
+        const cardWidth = 395; // Imposta la larghezza effettiva delle card
+        const margin = 5; // Margine delle card
+
+        // Recupera i pulsanti per disabilitarli quando necessario
+        const prevButton = document.querySelector('.button-left');
+        const nextButton = document.querySelector('.button-right');
+
+        // Funzione per aggiornare la posizione delle card nel carosello
+        function updateCarousel() {
+            const carouselInner = document.getElementById('carouselInner1'); // Usa l'ID corretto
+            const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+            // Calcola l'offset orizzontale da applicare al carosello
+            const offset = -currentIndex * (cardWidth + margin);
+
+            // Limita il movimento in modo che il carosello non vada oltre le ultime carte
+            const maxOffset = -((totalCards - cardsToShow) * (cardWidth + margin));
+            carouselInner.style.transform = `translateX(${Math.max(offset, maxOffset)}px)`;
+
+            // Disabilita i pulsanti se necessario
+            prevButton.disabled = currentIndex <= 0;
+            nextButton.disabled = currentIndex >= totalCards - cardsToShow;
+        }
+
+        // Funzione per passare alla card successiva nel carosello
+        function nextSlide() {
+            const totalCards = document.querySelectorAll('#carouselInner1 .card').length; // Selettore corretto
+
+            // Incrementa l'indice corrente per passare alla card successiva
+            currentIndex = Math.min(currentIndex + 1, totalCards - cardsToShow);
+            updateCarousel();
+        }
+
+        // Funzione per tornare alla card precedente nel carosello
+        function prevSlide() {
+            // Decrementa l'indice corrente per tornare alla card precedente
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateCarousel();
+        }
+
+        // Inizializza il carosello disabilitando i pulsanti se necessario
+        updateCarousel();
+
+    </script>
+</body>
+
+
+
+</html>

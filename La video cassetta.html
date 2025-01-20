@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="La video cassetta.css">
+    <title>La video cassetta</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>La video cassetta</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>
+                    Durante il primo anno presso FMA, ho partecipato al progetto "La Videocassetta" come parte delle
+                    lezioni di Direzione della fotografia cinematografica e montaggio. Il progetto prevedeva la
+                    realizzazione di un breve video basato su un soggetto scelto dal gruppo, con una suddivisione dei
+                    ruoli tra i membri della troupe.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>L’obiettivo era acquisire esperienza pratica nella gestione delle riprese, del suono,
+                        dell’illuminazione e della post-produzione, lavorando in team per realizzare un prodotto
+                        audiovisivo completo.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida è stata assumere il ruolo di cameraman, gestendo una Blackmagic e
+                        ottiche (18-35), inquadrature e movimenti di macchina: un tracking con
+                        carrello e un movimento di pan su treppiede. Ho collaborato per
+                        coordinare l’illuminazione del set e, in post-produzione, mi sono occupato del montaggio delle
+                        scene e della color correction con Da Vinci.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho gestito le riprese con precisione, collaborando con i compagni che si occupavano
+                        dell’illuminazione del set e del suono. In post-produzione, ho curato il montaggio delle scene e
+                        migliorato il risultato finale con una color correction accurata ed esportando con profilo
+                        colore Rec-709.</p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="LaVideoCassetta" controls>
+                    <source src="FMA/Direzione della fotografia/La videocassetta/Videocassetta_almirInnocenti.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>

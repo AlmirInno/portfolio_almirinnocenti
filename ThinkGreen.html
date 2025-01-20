@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ThinkGreen.css">
+    <title>ThinkGreen</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="LogoNav">Portfolio Almir</a></li>
+                <li><a href="about.html">SU DI ME</a></li>
+                <li class="dropdown">
+                    <a href="progetti.html">PROGETTI</a>
+                    <ul class="dropdown-content">
+                        <li><a href="progetti.html">I Miei Lavori</a></li>
+                        <li><a href="webDesign.html">Web Design</a></li>
+                        <li><a href="programmazioneWeb.html">Programmazione Web</a></li>
+                        <li><a href="videoMaking.html">Video Making</a></li>
+                        <li><a href="animazioni2D.html">Animazioni 2D</a></li>
+                        <li><a href="animazioni3D.html">Animazioni 3D</a></li>
+                        <li><a href="soundDesign.html">Sound Design</a></li>
+                        <li><a href="lacerbaIO.html">Lacerba.io</a></li>
+                    </ul>
+                </li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+                <li><button type="button" class="scopri" onclick="window.location.href='tel:+393314447370';">CHIAMA ORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduzione">
+            <div class="title">
+                <h1>Think Green</h1>
+            </div>
+
+            <div class="descrizione">
+                <p>Il progetto Think Green è stato realizzato durante il terzo anno al CSIA nelle lezioni di animazione
+                    2D. Il compito consisteva nel creare due video per promuovere ThinkGreen, un'associazione di
+                    sviluppo sostenibile. Il primo video ha mirato a ricreare un video esistente utilizzando After
+                    Effects, mentre il secondo video ha seguito lo stesso formato, ma con un concetto originale,
+                    mantenendo il focus sulla sostenibilità.
+                </p>
+            </div>
+        </section>
+
+        <section class="key">
+
+            <div>
+                <article>
+                    <h3>OBIETTIVI</h3>
+                    <p>Creare due video che promuovessero i valori di ThinkGreen. Il primo video doveva allenare le
+                        capacità tecniche nell'uso di After Effects, mentre il secondo video doveva riflettere lo
+                        stesso formato, ma con un approccio creativo e originale.
+                    </p>
+                </article>
+                <article>
+                    <h3>SFIDA PERSONALE</h3>
+                    <p>La sfida è stata quella di ricreare fedelmente il primo video utilizzando le opzioni di
+                        trasformazione degli oggetti in After Effects , migliorando al contemporaneo le mie competenze
+                        tecniche. Successivamente, dovevo creare un video originale che rispettasse lo stesso formato ma
+                        trasmettesse un messaggio di sviluppo sostenibile in modo innovativo.</p>
+                </article>
+                <article>
+                    <h3>SOLUZIONE</h3>
+                    <p>Ho utilizzato After Effects per il primo video, concentrandomi sull'animazione degli oggetti in
+                        modo fluido. Per il secondo video, ho mantenuto la struttura del primo, ma ho
+                        sviluppato un concetto originale che enfatizzava i temi della sostenibilità, utilizzando
+                        tecniche di animazione 2D per sensibilizzare il pubblico sui temi ambientali.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="progetto">
+
+            <div class="galleria">
+                <video id="ThinkGreen" controls>
+                    <source src="Animazioni 2D/Terzo anno/Thinkgreen/thinkgreen_almirinnocenti.mp4" type="video/mp4">
+                </video>
+
+                <video id="ThinkGreen" controls>
+                    <source src="Animazioni 2D/Terzo anno/Thinkgreen/Thinkgreenpersonale.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bottoni">
+                <button><a class="downloadButton" href="" download="">
+                        Scarica PDF</a></button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Portfolio by Almir Innocenti</p>
+        </div>
+    </footer>
+
+    <script>
+        // Seleziona il link all'interno del bottone
+        document.querySelector('.downloadButton').addEventListener('click', (e) => {
+            e.preventDefault();  // Prevenire il comportamento di default del link (il download)
+
+            // Mostra l'alert che dice che il file non è disponibile
+            alert('Questo file non è al momento disponibile');
+        });
+
+    </script>
+</body>
+
+</html>
